@@ -1,0 +1,32 @@
+Assignment #1
+	Research on being a Software Tester.
+	Answer the ff:
+		What is the role of a Software Tester?	
+		What are the responsibilities of a     Software Tester?
+		What are the skills needed by a Software Tester?
+
+Put your answers in a word document with the filename : "FirstnameLastname - ST - The Tester Role - AS1.docx"
+
+A software tester tests whether software works as expected. A good software tester writes programs that can automate many of the repetitive tasks involved in testing. 
+
+Analytical and logical thinking
+The ability to envision business situations
+A sense of intellectual curiosity and creativity
+Critical thought and rational enquiry
+
+
+
+Research on being a Software Tester.
+•	Answer the FF:
+	o	What is the role of a Software Tester?
+		o  The role of a software tester is that he is capable of designing test suites and should have the ability to understand usability issues. Such a tester is expected have a sound knowledge of software design and test execution methodologies. It is very important for a software tester to have great communication skills so that he can interact with the development team efficiently.
+	o	What are the responsibilities of a Software Tester?
+		o  The responsibilities of a software tester are to read and analyse the documents and understand what needs to be tested, develop test cases and prioritize testing activities and execute all test case and report defects also define severity and priority for each defect. It is also the Software Tester’s responsibility to prepare test scenarios for usability testing and submit his observations to the development team. Software Testers are often responsible for creating test-product documentation and also has to participate in testing related walkthrough.
+	o	What are the skills needed by a Software Tester?
+		o  The three most important skills for a good software tester to have are First, Analytical and Logical Thinking to identify the hidden errors, not simply prove that the software works. Second, the ability to envision business situations a good tester should be able to envision a real-time business situations through mental mapping, abstract idea inferred from specifications. Third and finally continue to learn because organizations and business change rapidly, which means the approaches and processes that work well today will be out-dated tomorrow. Therefore, it is imperative that a tester place priority on noticing, adapting and learning from change that is happening around him.
+
+
+
+
+SOURCES
+http://searchsoftwarequality.techtarget.com/tip/Ten-skills-of-highly-effective-software-testers
