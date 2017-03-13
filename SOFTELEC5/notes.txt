@@ -13,4 +13,34 @@ What is mongoDB?
 		- very cheap
 		- difficult to config.
 		- need to identify the master from others.
+		- if master is full adds a new server replicated from master
+		- downside need to replicate schema
 	* Vertical Scaling - to upgrade needs to restart. 1 server to upgrade.
+	dynamic schema - flexible table columns
+
+	typical json document
+	
+	db.collection.insert({
+		"firstName": "Kyel",
+		"lastName": "David",
+		"nickName": "Pogi",
+		"hobbies": [
+			"programming",
+			"dota"
+		]
+	});
+
+	What about Objects?
+
+	Collection:
+		a collection has functions
+		different fields
+
+	Fields that I don't know
+
+	"birthDate: new Date()
+
+	Embedded Document
+		can contain entire documents
+
+	
