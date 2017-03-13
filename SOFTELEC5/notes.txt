@@ -1,0 +1,16 @@
+Week #2
+noSQL
+ROBOMONGO
+Fundamentals
+
+What is mongoDB?
+	Document oriented DB
+	non-relational (no transactions)
+	JSON Data type
+	Horizontal Scaling 
+		- upgrade hardware of server.
+		- 2 or more servers.
+		- very cheap
+		- difficult to config.
+		- need to identify the master from others.
+	* Vertical Scaling - to upgrade needs to restart. 1 server to upgrade.
