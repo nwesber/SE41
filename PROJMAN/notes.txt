@@ -48,3 +48,9 @@ Assignment
 		
 		1. https://www.projecttimes.com/articles/project-manager-perspective.html
 		2. https://www.projecttimes.com/articles/communicating-with-qnon-expertsq-a-guide-for-project-managers.html
+	
+	Top 10 Strategic Technologies
+		1. Mobile Devices
+		2. Mobile-centric applications and interfaces.
+		3. Contextual and social user experience eg. Lazada
+		4. Cloud computing 
