@@ -30,3 +30,46 @@ Research on being a Software Tester.
 
 SOURCES
 http://searchsoftwarequality.techtarget.com/tip/Ten-skills-of-highly-effective-software-testers
+
+
+Seatwork #2 
+
+Pick one from the following:
+	1. Amazon.com
+	2. A bank ATM
+	3. Clash of Clans
+	4. The MRT Turnstyle
+
+Discuss with your groupmates what are the possible things that you need to test in those systems.  List down at least 30 possible items to test.
+ 
+	After listing down the test items group them according to:
+	A. Normal - something that SHOULD happen
+	B. Error - something that happens when something goes wrong
+	C. Exception - something that happens but was not planned for.
+
+
+1. Insufficent Value - error
+2. Ticket Overtime - error
+3. Damaged Card - exception
+4. Fast Tapping - exception
+5. Tap and Enter - normal
+6. Sufficient Value - error
+7. Lost Card - exception
+8. Double Deduction - exception
+9. Sufficient Value but Gate won't open - error
+10. sometimes unresponsive - exception 
+11. entry mismatch - error
+12. sometimes only 1 turnstyle is working - exception
+13. no last ride bonus - normal
+14. turnstyle won't budge - exception
+15. entry/exit match - normal
+
+
+Assignment #2
+Research on Automated Testing Tools.
+Give a two paragraph summary of what those tools normally do.
+Cite 2 popular tools and list the features of those tools
+ 
+Put your answers in a word document with the filename : "FirstnameLastname - ST - Tools - AS2.docx"
+ 
+When done upload the file to your wiki folder and update your wiki page.

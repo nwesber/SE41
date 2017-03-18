@@ -43,5 +43,4 @@ What is mongoDB?
 	Embedded Document
 		can contain entire documents
 
-
 	
