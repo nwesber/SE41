@@ -7,11 +7,12 @@ use App\book;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Eloquent\Collection;
 use Jenssegers\Mongodb\Eloquent\Model as Model;
-
+use Redis;
+use Cache;
 class BookController extends Controller{
 
     public function index(){
-        $books = DB::collection('books')->get();
+        $books = Book::fetchAll();
         return view('books.index', compact('books'));
     }
 

@@ -20,3 +20,4 @@ Route::resource('books', 'BookController');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
+
