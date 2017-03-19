@@ -21,21 +21,21 @@
         ]) !!};
     </script>
 </head>
-<body>
+<body >
+    <div class="container">
+        <form role="form" method="POST" action="{{ route('login') }}">
+            <h1>BLOG</h1>
+            <div class="white-box">
+                <input id="email" type="email" class="form-control" name="email" required autofocus>
+              <input id="password" type="password" class="form-control" name="password" required>
+              <input type="hidden" name="_token" value="{{ csrf_token() }}">
+            </div>
+            <input type='submit' value='Log in'>
 
-<form role="form" method="POST" action="{{ route('login') }}">
-    <h1>BLOG</h1>
-    <div class="white-box">
-        <input id="email" type="email" class="form-control" name="email" required autofocus>
-      <input id="password" type="password" class="form-control" name="password" required>
-      <input type="hidden" name="_token" value="{{ csrf_token() }}">
+            <p><a href="{{ route('password.request') }}">Forgot your password?</a></p>
+            <p><a href="{{ url('/register') }}">Sign up for a new account.</a></p>
+        </form>
     </div>
-    <input type='submit' value='Log in'>
-
-    <p><a href="{{ route('password.request') }}">Forgot your password?</a></p>
-    <p><a href="{{ url('/register') }}">Sign up for a new account.</a></p>
-</form>
-
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
