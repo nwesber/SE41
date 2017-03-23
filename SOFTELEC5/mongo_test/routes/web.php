@@ -16,6 +16,7 @@ Route::get('/', function () {
 });
 
 Route::resource('books', 'BookController');
+Route::resource('blog', 'BlogController');
 
 Auth::routes();
 

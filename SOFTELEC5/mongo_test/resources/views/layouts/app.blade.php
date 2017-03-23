@@ -43,9 +43,9 @@
 
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
                     <!-- Left Side Of Navbar -->
-                   <!--  <ul class="nav navbar-nav">
-                        &nbsp;
-                    </ul> -->
+                    <ul class="nav navbar-nav">
+                        <li><a href="{{ route('blog.index') }}">View Blog</a></li>
+                    </ul>
 
                     <!-- Right Side Of Navbar -->
                     <ul class="nav navbar-nav navbar-right">
@@ -78,8 +78,6 @@
                 </div>
             </div>
         </nav>
-
-        <div class="clearTop"></div>
         @yield('content')
     </div>
 
