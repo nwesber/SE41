@@ -21,7 +21,7 @@ Project Scheduling and Cost (Excel)
 
 QUIZ NEXT WEEK 
 
-* http://blog.capterra.com/surprising-project-management-statistics/
+http://blog.capterra.com/surprising-project-management-statistics/
 
 What is a project?
 	- a temporary endewavor undertaken to create a unique product, service or result.
