@@ -154,4 +154,9 @@ Project Scheduling and Cost (Excel)
 
 ##### Poor Allocation of Resources
   * Budgeted funds must be used judiciously to avoid exorbitant spending in non-vital areas. Spending too much money in one area and not enough in another can jeopardize the entire project, especially in a small business with limited funds. One example would be the construction/renovation of a kitchen in which costs were cut by using cheaper flooring materials in order to afford much higher-end, heavy-duty appliances. After the floor's installation, the appliances were delivered. The substandard flooring was damaged when the appliances were brought in, and new flooring must now be ordered. Not only has the timeline been affected, but the budget as well. A better choice would have been to order good-quality, moderately priced flooring and appliances to keep the budget in check and the project on schedule.
-  
+
+##### Loss Through Damage or Malfunction
+  * When key equipment is broken on site, damaged during installation or fails to operate as intended, it must be reordered, replaced or repaired to get the project back on track. Each of these situations can be an unexpected expense to the allotted budget. A percentage of each project budget should be set aside in advance to prevent diverting funds from budgeted needs (up to 30 percent).
+
+##### Vendor Relationship Issues
+  * Problems with outside contractors, vendors or suppliers can impact your project budget. Use only vendors who have an excellent reputation for being reliable and skilled. Lack of professionalism, inability to meet deadlines and shoddy work will mean locating another vendor during the project, and paying new fees to contract a replacement.
