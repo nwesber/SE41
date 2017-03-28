@@ -92,7 +92,7 @@ Project Scheduling and Cost (Excel)
     * beware the pet project
    * Research-oriented development
     * train employees so that they are knowledgeble
-  ##### Technology Related
+  ##### Technology Relate
     * Silver-bullet syndrome
     * Overestimated savings from new tools and methods
      * Fad warning
@@ -120,11 +120,11 @@ Project Scheduling and Cost (Excel)
   * inexperience of project leader
   * poor communication
   * Human Error
-   * always perform check and validate
+        * always perform check and validate
   * Loss through damage or malfunction
-   * proper budget allocation
+  * proper budget allocation
   * vendor relationship issues
-   * vendor = resources
+        * vendor = resources
   * employee absenteesism
   * Poor Workmanship
   * Environmental Factors
