@@ -127,9 +127,9 @@ Project Scheduling and Cost (Excel)
   11. Poor Allocation of Resources
   
   
-##### Reasons Why Do Projects Fail
+## Reasons Why Do Projects Fail
 
-##### Please read and analyze its meaning:
+### Please read and analyze its meaning:
 
 ##### Inexperience of Project Leader
   * Inexperience of the leader of a project can mean that any aspect of it could be inadvertently mismanaged, including the budget. While it is true that there is a first time for every undertaking, a project leader who is new to the responsibilities of the position may encounter more hurdles than one who is well-versed in seeing a project through from inception to completion. Neophyte project leaders require more guidance and oversight throughout the process, or at the very least, a mentor who can be trusted to give prudent and objective advice.
