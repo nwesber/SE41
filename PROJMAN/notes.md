@@ -117,15 +117,16 @@ Project Scheduling and Cost (Excel)
   1. inexperience of project leader
   2. poor communication
   3. Human Error
-   * always perform check and validate
+   3.1. always perform check and validate
   4. Loss through damage or malfunction
   5. proper budget allocation
   6. vendor relationship issues
-   * vendor = resources
+   6.1. vendor = resources
   7. employee absenteesism
   8. Poor Workmanship
   9. Environmental Factors
-    * earhquake 
+    9.1 Earhquake
+    9.2 Coldsight
   10. Lack of Foresight
   11. Poor Allocation of Resources
 		
