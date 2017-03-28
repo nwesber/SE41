@@ -113,5 +113,15 @@ Week #3
 		
 		Fuzzy business objectives: Only 55% feel that the business objectives of their 
 		projects are clear to them.
-		
+    
+    Requirements definition process do not reflect 20% describe the requirements process as the articulation of business need.
+    
+    Lack of complete agreement when projects are done;
+    Only 23% state they are always in agreement when a project is truly done.
+    
+    Project Sign Off means a formal ultimate acceptance of the project results by the client who agrees that everything he had been         expecting for (according to contract and other specification documents) is delivered and hence the job of project executers is           completely over now. 
+    
+    
+Week #4
+    
 		
