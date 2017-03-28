@@ -1,17 +1,15 @@
-Week #1
-4 Core 
-4 Support 
-1 Integration
+# Week 1
 
 WBS (word breakdown structure)
 
 2 types of resources
 human and non-human
 
-Week #2
-What Project Management?
-Common reasons why project fails
-Gartner 
+# Week 2
+
+###### What Project Management?
+* Common reasons why project fails
+* Gartner 
 
 IT PROJ = First Book
 Project Baseline - determine estimates and record the actual.
@@ -19,40 +17,40 @@ A baseline is a fixed schedule, which represents the standard that is used to me
 
 Project Scheduling and Cost (Excel)
 
-QUIZ NEXT WEEK 
+###### QUIZ NEXT WEEK 
 
-http://blog.capterra.com/surprising-project-management-statistics/
+(http://blog.capterra.com/surprising-project-management-statistics/)
 
-What is a project?
-	- a temporary endewavor undertaken to create a unique product, service or result.
-	- walang project na hindi natatapos laging may start and end
-	- Operations is work done to sustain the business
-	- A project ends when its objective have been reached or the project has been terminated.
-		- cancelled or continued.
-	- Projects can be large or small and take a short or long time to complete. 
+* What is a project?
+	* a temporary endewavor undertaken to create a unique product, service or result.
+	* walang project na hindi natatapos laging may start and end.
+	* Operations is work done to sustain the business.
+	* A project ends when its objective have been reached or the project has been terminated.
+	 * cancelled or continued.
+	* Projects can be large or small and take a short or long time to complete. 
 
-Project Attributes
-	- has a unique purpose (well defined objective and measurable)
-	- is temporary (has a beginning and end)
-	- Is developed using a progressive elaboration
-		- continous envolvment
-	- required resources, often from various areas.
-	- should have a primary customer or sponsor
-		- the project sponsor usually provides the direction and funding of the project
-	- involves uncertainty
-Assignment
-	2 project management articles (standish, project times, PMI, any other website project managmenet articles.)
+* Project Attributes
+	* has a unique purpose (well defined objective and measurable)
+	* is temporary (has a beginning and end)
+	* Is developed using a progressive elaboration
+	 * continous envolvment
+	* required resources, often from various areas.
+	* should have a primary customer or sponsor
+	 * the project sponsor usually provides the direction and funding of the project
+	* involves uncertainty
+* Assignment
+	* 2 project management articles (standish, project times, PMI, any other website project managmenet articles.)
 	TAGALOG
 		
-		1. https://www.projecttimes.com/articles/project-manager-perspective.html
-		2. https://www.projecttimes.com/articles/communicating-with-qnon-expertsq-a-guide-for-project-managers.html
+		* https://www.projecttimes.com/articles/project-manager-perspective.html
+		* https://www.projecttimes.com/articles/communicating-with-qnon-expertsq-a-guide-for-project-managers.html
 	
-	Top 10 Strategic Technologies
-		1. Mobile Devices
-		2. Mobile-centric applications and interfaces.
-		3. Contextual and social user experience eg. Lazada
-		4. Cloud computing 
-Week #3	
+	* Top 10 Strategic Technologies
+	 * Mobile Devices
+	 * Mobile-centric applications and interfaces.
+	 * Contextual and social user experience eg. Lazada
+	 * Cloud computing 
+# Week 3	
 	Classic Mistakes of PM Failure
 		People Related
 			Undermined motivation
@@ -122,6 +120,6 @@ Week #3
     Project Sign Off means a formal ultimate acceptance of the project results by the client who agrees that everything he had been         expecting for (according to contract and other specification documents) is delivered and hence the job of project executers is           completely over now. 
     
     
-Week #4
-    
+# Week 4
+    Project Char
 		
