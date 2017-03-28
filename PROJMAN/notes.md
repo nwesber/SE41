@@ -93,8 +93,8 @@ Project Scheduling and Cost (Excel)
    * Research-oriented development
     * train employees so that they are knowledgeble
   ##### Technology Related
-    * Silver-bullet syndrome
-    * Overestimated savings from new tools and methods
+   * Silver-bullet syndrome
+   * Overestimated savings from new tools and methods
     
 #### Why do projects fail?
   * Lack of confidence in project success, 75% of respondents admit that their projects are either always or usually "doomed right from the start"
@@ -114,17 +114,18 @@ Project Scheduling and Cost (Excel)
     
 # Week 4
 ##### 10 reasons why projects go above budget
-  * inexperience of project leader
-  * poor communication
-  * Human Error
+  1. inexperience of project leader
+  2. poor communication
+  3. Human Error
    * always perform check and validate
-  * Loss through damage or malfunction
-  * proper budget allocation
-  * vendor relationship issues
+  4. Loss through damage or malfunction
+  5. proper budget allocation
+  6. vendor relationship issues
    * vendor = resources
-  * employee absenteesism
-  * Poor Workmanship
-  * Environmental Factors
-  * Lack of Foresight
-  * Poor Allocation of Resources
+  7. employee absenteesism
+  8. Poor Workmanship
+  9. Environmental Factors
+    * earhquake 
+  10. Lack of Foresight
+  11. Poor Allocation of Resources
 		
