@@ -92,13 +92,10 @@ Project Scheduling and Cost (Excel)
     * beware the pet project
    * Research-oriented development
     * train employees so that they are knowledgeble
-  ##### Technology Relate
+  ##### Technology Related
     * Silver-bullet syndrome
     * Overestimated savings from new tools and methods
-     * Fad warning
-     * Switching tools in mid-project
-     * Lack of automated source-code control
-
+    
 #### Why do projects fail?
   * Lack of confidence in project success, 75% of respondents admit that their projects are either always or usually "doomed right from the start"
 
@@ -120,11 +117,11 @@ Project Scheduling and Cost (Excel)
   * inexperience of project leader
   * poor communication
   * Human Error
-        * always perform check and validate
+   * always perform check and validate
   * Loss through damage or malfunction
   * proper budget allocation
   * vendor relationship issues
-        * vendor = resources
+   * vendor = resources
   * employee absenteesism
   * Poor Workmanship
   * Environmental Factors
