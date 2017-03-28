@@ -126,3 +126,32 @@ Project Scheduling and Cost (Excel)
   10. Lack of Foresight
   11. Poor Allocation of Resources
   
+  
+##### Reasons Why Do Projects Fail
+
+###### Please read and analyze its meaning:
+
+#### Inexperience of Project Leader
+  * Inexperience of the leader of a project can mean that any aspect of it could be inadvertently mismanaged, including the budget. While it is true that there is a first time for every undertaking, a project leader who is new to the responsibilities of the position may encounter more hurdles than one who is well-versed in seeing a project through from inception to completion. Neophyte project leaders require more guidance and oversight throughout the process, or at the very least, a mentor who can be trusted to give prudent and objective advice.
+  
+#### Poor Communication/Management of Personnel
+  * In order for a project to develop, accurate and timely communication should be present in all phases. The project leader needs to express clearly what is needed and what is happening with suppliers, contractors, crew/team members and administrators. Individual crew/team members likewise need to communicate well among themselves. Misunderstandings during planning and execution lead to tasks not being carried out properly. Correcting the situation can cause time delays and budget overruns. Colleagues should keep each other updated throughout the process to help projected timelines converge and unexpected costs minimal.
+
+##### Human Error
+  * Human error ranges from an omitted or misplaced decimal point on a balance sheet to the wrong equipment or supplies being ordered. No matter what form it may take, mistakes can be costly. Most forms of human error can be mitigated by taking a moment to verify documents, orders and double-checking any changes as they occur.
+
+##### Employee Absenteeism
+  * A certain degree of absenteeism could occur due to illness or emergency, but if it is excessive, it will impede the success of a project. The individuals chosen to spearhead a project need to be fully invested personally to see it through to completion and chosen carefully by management. If employees have to be replaced mid-project, delays are likely due to the training/learning curve that the new person must undergo. If a number of staff are lost, and not replaced, completing the task at hand will be more difficult with fewer people having more duties.
+
+##### Poor Workmanship
+  * Assigned tasks should not only be completed on time, they should also be performed well. Poor work performance requiring more than one adjustment or revision costs more money due to overtime requirements and can strain any budget. Having skilled and experienced professionals on a project can make all the difference.
+
+##### Environmental Factors
+  * Little can be done about inclement weather or natural disasters. A project can be sidelined unexpectedly and indefinitely due to conditions that prevent team members from arriving on site, delay the delivery of supplies or result in partial or total loss. Recovering from this type of setback is no simple matter, but allocating money to insurance in the initial planning stages of a project is wise.
+  
+##### Lack of Foresight
+  * Poor planning is responsible for most budget shortfalls. Simply put, when fewer funds than necessary are allocated for a project, it is a certainty that more money will be needed to see the project through to completion. Not understanding what is required financially for an undertaking, from salaries to overhead costs, can lead to running out of funds in the early stages.
+
+##### Poor Allocation of Resources
+  * Budgeted funds must be used judiciously to avoid exorbitant spending in non-vital areas. Spending too much money in one area and not enough in another can jeopardize the entire project, especially in a small business with limited funds. One example would be the construction/renovation of a kitchen in which costs were cut by using cheaper flooring materials in order to afford much higher-end, heavy-duty appliances. After the floor's installation, the appliances were delivered. The substandard flooring was damaged when the appliances were brought in, and new flooring must now be ordered. Not only has the timeline been affected, but the budget as well. A better choice would have been to order good-quality, moderately priced flooring and appliances to keep the budget in check and the project on schedule.
+  
