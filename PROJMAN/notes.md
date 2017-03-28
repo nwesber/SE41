@@ -21,35 +21,33 @@ Project Scheduling and Cost (Excel)
 
 [READ](http://blog.capterra.com/surprising-project-management-statistics/)
 
-* What is a project?
-	* a temporary endewavor undertaken to create a unique product, service or result.
-	* walang project na hindi natatapos laging may start and end.
-	* Operations is work done to sustain the business.
-	* A project ends when its objective have been reached or the project has been terminated.
-	 * cancelled or continued.
-	* Projects can be large or small and take a short or long time to complete. 
+  * What is a project?
+   * a temporary endewavor undertaken to create a unique product, service or result.
+   * walang project na hindi natatapos laging may start and end.
+   * Operations is work done to sustain the business.
+   * A project ends when its objective have been reached or the project has been terminated.
+    * cancelled or continued.
+  * Projects can be large or small and take a short or long time to complete. 
 
-* Project Attributes
-	* has a unique purpose (well defined objective and measurable)
-	* is temporary (has a beginning and end)
-	* Is developed using a progressive elaboration
-	 * continous envolvment
-	* required resources, often from various areas.
-	* should have a primary customer or sponsor
-	 * the project sponsor usually provides the direction and funding of the project
-	* involves uncertainty
-* Assignment
-	* 2 project management articles (standish, project times, PMI, any other website project managmenet articles.)
-	TAGALOG
-		
-	 * [Project Manager Perspective](https://www.projecttimes.com/articles/project-manager-perspective.html)
-	 * [Communicating with non-experts](https://www.projecttimes.com/articles/communicating-with-qnon-expertsq-a-guide-for-project-managers.html)
-	
-	* Top 10 Strategic Technologies
-	 * Mobile Devices
-	 * Mobile-centric applications and interfaces.
-	 * Contextual and social user experience eg. Lazada
-	 * Cloud computing 
+  * Project Attributes
+   * has a unique purpose (well defined objective and measurable)
+   * is temporary (has a beginning and end)
+   * Is developed using a progressive elaboration
+    * continous envolvment
+   * required resources, often from various areas.
+   * should have a primary customer or sponsor
+    * the project sponsor usually provides the direction and funding of the project
+   * involves uncertainty
+  * Assignment
+   * 2 project management articles (standish, project times, PMI, any other website project managmenet articles.) TAGALOG
+    * [Project Manager Perspective](https://www.projecttimes.com/articles/project-manager-perspective.html)
+    * [Communicating with non-experts](https://www.projecttimes.com/articles/communicating-with-qnon-expertsq-a-guide-for-project-managers.html)
+  * Top 10 Strategic Technologies
+   * Mobile Devices
+   * Mobile-centric applications and interfaces.
+   * Contextual and social user experience eg. Lazada 
+   * Cloud computing
+   
 # Week 3	
   #### Classic Mistakes of PM Failure
   ##### People Related
@@ -94,7 +92,7 @@ Project Scheduling and Cost (Excel)
     * beware the pet project
    * Research-oriented development
     * train employees so that they are knowledgeble
-   * Technology Related
+  ##### Technology Related
     * Silver-bullet syndrome
     * Overestimated savings from new tools and methods
      * Fad warning
@@ -124,5 +122,7 @@ Project Scheduling and Cost (Excel)
   * Human Error
    * always perform check and validate
   * Loss through damage or malfunction
+   * proper budget allocation
   * vendor relationship issues
+   * vendor = resources
 		
