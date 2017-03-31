@@ -13,9 +13,11 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link href='https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.5.1/css/froala_editor.min.css' rel='stylesheet' type='text/css' />
-    <link href='https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.5.1/css/froala_style.min.css' rel='stylesheet' type='text/css' />
+    <link href="//code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" type="text/css" rel="stylesheet">
+    <link href="{{ asset('css/bootstrap-tokenfield.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/tokenfield-typeahead.min.css') }}" rel="stylesheet">
     <link href="{{ asset('css/home/blogCard.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/blog/blog.css') }}" rel="stylesheet">
     <link href="{{ asset('css/bootstrap-tagsinput.css') }}" rel="stylesheet">
     <!-- Scripts -->
     <script>
@@ -25,6 +27,11 @@
     </script>
 
     <style type="text/css">
+        .centerForm {
+             float: none;
+             margin-left: auto;
+             margin-right: auto;
+        }
 
         body {
                 height: 1000px;
@@ -109,6 +116,10 @@
             padding-left: 0px !important;
         }
 
+        .clearTopSmall{
+            margin-top: 10px;
+        }
+
     </style>
 </head>
 <body>
@@ -147,6 +158,7 @@
                     <div class="list-group">
                       <a href="{{ route('blog.create') }}" class="list-group-item" style="width: 100%;">New Story</a>
                       <a href="javascript:void(0);" class="list-group-item">My Stories</a>
+                      <a href="javascript:void(0);" class="list-group-item">Settings</a>
                       <a href="{{ route('logout') }}"
                          onclick="event.preventDefault();
                          document.getElementById('logout-form').submit();"
@@ -169,14 +181,15 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
+    <script type="text/javascript" src="//code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <script src="{{ asset('js/bootstrap-tokenfield.js') }}"></script>
     <script src="{{ asset('js/bootstrap-tagsinput.min.js') }}"></script>
-    <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.5.1/js/froala_editor.min.js'></script>
+    <script src="{{ asset('js/jquery.bootstrap-autohidingnavbar.js') }}"></script>
+    <script src="{{ asset('js/blog.js') }}"></script>
+    <script src="http://cloud.tinymce.com/stable/tinymce.min.js?apiKey=zjzlnpisviw5oas4htsem7w993fr17gm1dyfi3x3z0o6aobo"></script>
+
+    <script>tinymce.init({ selector:'textarea', menubar: false, statusbar: false});</script>
     <script type="text/javascript">
-        $(function() {
-            $('div#froala-editor').froalaEditor({
-                heightMin: 100
-            })
-        });
 
         $(window).scroll(function() {
             var scroll = $(window).scrollTop();
@@ -206,6 +219,17 @@
               return $('#popover-content').html();
             }
         });
+
+        $(document).keypress(
+            function(event){
+             if (event.which == '13') {
+                event.preventDefault();
+              }
+
+
+        });
+
+        $('#tokenfield').tokenfield();
 
     </script>
 </body>

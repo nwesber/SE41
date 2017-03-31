@@ -20,6 +20,8 @@ Route::get('/', function () {
 Route::resource('books', 'BookController');
 Route::resource('blog', 'BlogController');
 
+Route::post('/createBlog', 'BlogController@store');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
