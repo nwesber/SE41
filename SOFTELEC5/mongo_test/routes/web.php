@@ -11,8 +11,10 @@
 |
 */
 
+Route::auth();
+
 Route::get('/', function () {
-    return view('auth.login');
+    return view('home');
 });
 
 Route::resource('books', 'BookController');
