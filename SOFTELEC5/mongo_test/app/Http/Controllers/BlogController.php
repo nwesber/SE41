@@ -9,13 +9,18 @@ use Illuminate\Database\Eloquent\Collection;
 use Jenssegers\Mongodb\Eloquent\Model as Model;
 use Redis;
 use Cache;
+
 class BlogController extends Controller{
 
   public function index(){
     return view('blog.index');
   }
 
-  public function showBlog($id){
+  public function create(){
+    return view('blog.create');
+  }
+
+  public function store(Request $request){
 
   }
 }
