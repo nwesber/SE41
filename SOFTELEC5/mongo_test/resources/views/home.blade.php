@@ -14,7 +14,7 @@
           <ul class="details">
             <li class="author"><a href="#">{{ $user{'name'} }}</a></li>
 
-            <li class="date"> {{ $blog{'created_at'}  }}</li>
+            <li class="date"> {{ date('d-m-Y', strtotime($blog{'created_at'}))  }}</li>
             <li class="tags">
               <ul>
                 @foreach($blog{'tags'} as $tag => $t)

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ config('app.locale') }}">
-<head>
+  <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,76 +21,117 @@
     <link href="{{ asset('css/bootstrap-tagsinput.css') }}" rel="stylesheet">
     <!-- Scripts -->
     <script>
-        window.Laravel = {!! json_encode([
-            'csrfToken' => csrf_token(),
-        ]) !!};
+      window.Laravel = {!! json_encode([
+        'csrfToken' => csrf_token(),
+      ]) !!};
     </script>
-</head>
-<body>
-  <div id="app">
-    <div class="navbar navbar-default navbar-fixed-top " style="margin: 0px; border: 0px;">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".main-nav">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="{{ url('/') }}">
-            BRAND
-          </a>
-        </div>
+  </head>
+  <body>
+    <div id="app">
+      <div class="navbar navbar-default navbar-fixed-top " style="margin: 0px; border: 0px;">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".main-nav">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="{{ url('/') }}">
+              LARGE
+            </a>
+          </div>
 
-        <ul class="nav navbar-nav navbar-right">
-            <!-- Authentication Links -->
+          <ul class="nav navbar-nav navbar-right">
+              <!-- Authentication Links -->
 
-          @if (Auth::guest())
-             <li><a href="javascript:void(0);" class="btn btn-default btn-xs navbtn">Get Started</a></li>
-          @else
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                {{ Auth::user()->name }} <span class="caret"></span>
-              </a>
+            @if (Auth::guest())
+               <li><a href="#" class="btn btn-default btn-xs navbtn"
+               data-toggle="modal" data-target="#myModal">Get Started</a></li>
+            @else
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                  {{ Auth::user()->name }} <span class="caret"></span>
+                </a>
 
-              <ul class="dropdown-menu" role="menu">
-                <li> <a href="{{ route('blog.create') }}">New Story</a>
-                <li>
-                  <a href="{{ route('logout') }}"
-                    onclick="event.preventDefault();
-                   document.getElementById('logout-form').submit();">
-                    Logout
-                  </a>
+                <ul class="dropdown-menu" role="menu">
+                  <li> <a href="{{ route('blog.create') }}">New Story</a>
+                  <li>
+                    <a href="{{ route('logout') }}"
+                      onclick="event.preventDefault();
+                     document.getElementById('logout-form').submit();">
+                      Logout
+                    </a>
 
-                  <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                    {{ csrf_field() }}
-                  </form>
-                </li>
-              </ul>
-            </li>
-          @endif
-        </ul>
-
-
-        <div class="collapse navbar-collapse main-nav">
-          <ul class="nav navbar-nav">
-            <li><a href="#">TRAVEL</a></li>
-            <li class="divider-vertical"></li>
-            <li><a href="#">GAMES</a></li>
-            <li class="divider-vertical"></li>
-            <li><a href="#">FOOD</a></li>
-            <li class="divider-vertical"></li>
-            <li><a href="#">MOVIES</a></li>
-            <li class="divider-vertical"></li>
-            <li><a href="#">COMICS</a></li>
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                      {{ csrf_field() }}
+                    </form>
+                  </li>
+                </ul>
+              </li>
+            @endif
           </ul>
+
+          <div class="collapse navbar-collapse main-nav">
+            <ul class="nav navbar-nav">
+              <li><a href="#">TRAVEL</a></li>
+              <li class="divider-vertical"></li>
+              <li><a href="#">GAMES</a></li>
+              <li class="divider-vertical"></li>
+              <li><a href="#">FOOD</a></li>
+              <li class="divider-vertical"></li>
+              <li><a href="#">MOVIES</a></li>
+              <li class="divider-vertical"></li>
+              <li><a href="#">COMICS</a></li>
+            </ul>
+          </div>
+
         </div>
-
-
       </div>
-    </div>
 
-      @yield('content')
-  </div>
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div id="login-overlay" class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+              <h4 class="modal-title" id="myModalLabel">Login to large.com</h4>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-xs-6">
+                  <div class="well">
+                    <form id="loginForm" method="POST" action="{{ route('login') }}" novalidate="novalidate">
+                      <div class="form-group">
+                        <label for="username" class="control-label">Username</label>
+                        <input type="text" class="form-control" id="email" name="email" value="" required="" title="Please enter you username" placeholder="example@gmail.com">
+                        <span class="help-block"></span>
+                      </div>
+                      <div class="form-group">
+                        <label for="password" class="control-label">Password</label>
+                        <input type="password" class="form-control" id="password" name="password" value="" required="" title="Please enter your password">
+                        <span class="help-block"></span>
+                      </div>
+                      <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                      <div id="loginErrorMsg" class="alert alert-error hide">Wrong username og password</div>
+                      <button type="submit" class="btn btn-success btn-block" style="background-color: #02b875">Login</button>
+                      <a href="{{ route('password.request') }}" class="btn btn-default btn-block">Help to login</a>
+                    </form>
+                  </div>
+                </div>
+                <div class="col-xs-6">
+                  <p class="lead">Register now for <span class="text-success">FREE</span></p>
+                  <ul class="list-unstyled" style="line-height: 2">
+                    <li><span class="fa fa-check text-success"></span> Write your own article.</li>
+                    <li><span class="fa fa-check text-success"></span> Comment on any article.</li>
+                  </ul>
+                  <p><a href="{{ url('/register') }}" class="btn btn-info btn-block">Yes please, register now!</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        @yield('content')
+    </div>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
@@ -108,5 +149,5 @@
       });
     </script>
 
-</body>
+  </body>
 </html>
