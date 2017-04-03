@@ -138,8 +138,8 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="http://cloud.tinymce.com/stable/tinymce.min.js?apiKey=zjzlnpisviw5oas4htsem7w993fr17gm1dyfi3x3z0o6aobo"></script>
     <script src="{{ asset('js/bootstrap-tagsinput.min.js') }}"></script>
-
-    <script>tinymce.init({ selector:'textarea', menubar: false, statusbar: false});</script>
+    <script src="{{ asset('js/blog.js') }}"></script>
+    <script>tinymce.init({ selector:'textarea.editme', menubar: false, statusbar: false});</script>
     <script type="text/javascript">
       $(document).keypress(
       function(event){

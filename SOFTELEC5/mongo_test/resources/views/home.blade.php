@@ -26,7 +26,7 @@
           <div class="description">
             <h1>{{ $blog{'title'} }}</h1>
             <h2>{{ $blog{'short_content'} }}</h2>
-            <p class="summary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum dolorum architecto obcaecati enim dicta praesentium, quam nobis! Neque ad aliquam facilis numquam. Veritatis, sit.</p>
+            <p class="summary">{{ $blog{'summary'} }} {{ $blog{'summary'} }} {{ $blog{'summary'} }} {{ $blog{'summary'} }}</p>
             <a href="#">Read More</a>
           </div>
         </div>

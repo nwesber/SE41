@@ -33,6 +33,7 @@ class Blog extends Eloquent
     $blog = new Blog;
     $blog->title = $request->title;
     $blog->short_content = $request->shortContent;
+    $blog->summary = $request->summary;
     $blog->content = $request->content;
     $blog->user_id = $id;
     $blog->date_created = date("Y-m-d");
