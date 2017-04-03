@@ -13,14 +13,14 @@
 
 Route::auth();
 
-Route::get('/', function () {
-    return view('home');
-});
+Route::get('/', 'BlogController@index');
 
 Route::resource('books', 'BookController');
 Route::resource('blog', 'BlogController');
 
 Route::post('/createBlog', 'BlogController@store');
+Route::get('/profile', 'BlogController@myProfile');
+Route::get('/filter/{ tag }', 'BlogController@myProfile');
 
 Auth::routes();
 

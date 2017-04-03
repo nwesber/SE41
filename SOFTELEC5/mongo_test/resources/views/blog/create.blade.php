@@ -3,16 +3,18 @@
 @section('content')
 <div class="clearTop"></div>
 <div class="container">
-  <div class="panel panel-default centerForm" style="max-width: 700px;">
+  <div class="panel panel-default centerForm clearCreate" style="max-width: 700px;">
     <div class="panel-body">
 
       <form action="/createBlog" method="POST" class="form-horizontal uploader">
         {{ csrf_field() }}
         <input class="form-control"  placeholder="Title" name="title" id="title" />
         <div class="clearTopSmall"></div>
+        <input class="form-control"  placeholder="Short Description" name="shortContent" id="shortContent" />
+        <div class="clearTopSmall"></div>
 
 
-        <input type="text" class="form-control" name="tags" id="tokenfield" placeholder="#tags" />
+        <input type="text" name="tags" id="tags" data-role="tagsinput"  placeholder="tags" />
 
         <div class="clearTopSmall"></div>
 
@@ -25,8 +27,6 @@
         <label for="file-upload" id="file-drag">
           <img id="file-image" src="#" alt="Preview" class="hidden">
           <div id="start">
-            <i class="fa fa-download" aria-hidden="true"></i>
-            <div>Select a file or drag here</div>
             <div id="notimage" class="hidden">Please select an image</div>
             <span id="file-upload-btn" class="btn btn-primary">Select a file</span>
           </div>

@@ -1,78 +1,58 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="clearHeader navbar navbar-default navbar-static-top ">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".main-nav">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="{{ url('/') }}">
-            HOME
-          </a>
-        </div>
-        @if (Auth::guest())
-        <ul class="getstarted nav navbar-nav navbar-right" style="display: none;">
-          <li><a href="javascript:void(0);" class="btn btn-default btn-xs navbtn">Get Started</a></li>
-        </ul>
 
-        <div class="collapse navbar-collapse main-nav">
-          <ul class="nav navbar-nav">
-            <li><a href="#">TRAVEL</a></li>
-            <li class="divider-vertical"></li>
-            <li><a href="#">GAMES</a></li>
-            <li class="divider-vertical"></li>
-            <li><a href="#">FOOD</a></li>
-            <li class="divider-vertical"></li>
-            <li><a href="#">MOVIES</a></li>
-            <li class="divider-vertical"></li>
-            <li><a href="#">COMICS</a></li>
+
+
+
+<div class="container clearTop">
+  @foreach ($blogs as $i => $blog)
+    @foreach($users as $i => $user)
+      @if($blog{'user_id'} == $user{'_id'})
+        <div class="blog-card" style="margin-top: 30px;">
+          <div class="photo photo1"></div>
+          <ul class="details">
+            <li class="author"><a href="#">{{ $user{'name'} }}</a></li>
+
+            <li class="date"> {{ $blog{'created_at'}  }}</li>
+            <li class="tags">
+              <ul>
+                @foreach($blog{'tags'} as $tag => $t)
+                <li><a href="#">{{$t}}</a></li>
+                @endforeach
+              </ul>
+            </li>
           </ul>
+          <div class="description">
+            <h1>{{ $blog{'title'} }}</h1>
+            <h2>{{ $blog{'short_content'} }}</h2>
+            <p class="summary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum dolorum architecto obcaecati enim dicta praesentium, quam nobis! Neque ad aliquam facilis numquam. Veritatis, sit.</p>
+            <a href="#">Read More</a>
+          </div>
         </div>
-        @else
+      @endif
+    @endforeach
+  @endforeach
 
-        <ul class="nav navbar-nav navbar-right">
-            <li class="dropdown">
-
-
-                <ul class="dropdown-menu" role="menu">
-                  <li>
-                    <a href="{{ route('logout') }}"
-                      onclick="event.preventDefault();
-                      document.getElementById('logout-form').submit();">
-                      Logout
-                    </a>
-
-                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                      {{ csrf_field() }}
-                    </form>
-                  </li>
-                </ul>
-              </li>
+<!-- <div class="blog-card alt">
+  <div class="photo photo2"></div>
+    <ul class="details">
+      <li class="author"><a href="#">Jane Doe</a></li>
+      <li class="date">July. 15, 2015</li>
+      <li class="tags">
+        <ul>
+          <li><a href="#">Learn</a></li>
+          <li><a href="#">Code</a></li>
+          <li><a href="#">JavaScript</a></li>
         </ul>
-        <div class="collapse navbar-collapse main-nav">
-          <ul class="nav navbar-nav">
-            <li><a href="#">TRAVEL</a></li>
-            <li class="divider-vertical"></li>
-            <li><a href="#about">GAMES</a></li>
-            <li class="divider-vertical"></li>
-            <li><a href="#contact">FOOD</a></li>
-            <li class="divider-vertical"></li>
-            <li><a href="#contact">MOVIES</a></li>
-            <li class="divider-vertical"></li>
-            <li><a href="#contact">COMICS</a></li>
-          </ul>
-        </div>
-
-        @endif
-      </div>
+      </li>
+    </ul>
+    <div class="description">
+      <h1>Mastering the Language</h1>
+      <h2>Java is not the same as JavaScript</h2>
+      <p class="summary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum dolorum architecto obcaecati enim dicta praesentium, quam nobis! Neque ad aliquam facilis numquam. Veritatis, sit.</p>
+      <a href="#">Read More</a>
     </div>
-
-
-
-
-
-
+  </div>
+</div> -->
 @endsection
