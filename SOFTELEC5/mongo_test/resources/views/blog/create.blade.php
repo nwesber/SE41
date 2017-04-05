@@ -36,10 +36,10 @@
 
         <div class="form-group">
           <div class="col-md-12">
-            <h5><strong>Summary: </strong></h5>
+            <h5><strong>Summary: </strong><small><i>(max 80 characters)</i> </small></h5>
           </div>
           <div class="col-md-12">
-            <textarea style="width: 100%; height: 80px;" name="summary" id="summary">Summary</textarea>
+            <textarea style="width: 100%; height: 80px;" name="summary" id="summary" maxlength="50">Summary</textarea>
           </div>
         </div>
 

@@ -27,7 +27,7 @@
             <h1>{{ $blog{'title'} }}</h1>
             <h2>{{ $blog{'short_content'} }}</h2>
             <p class="summary">{{ $blog{'summary'} }} {{ $blog{'summary'} }} {{ $blog{'summary'} }} {{ $blog{'summary'} }}</p>
-            <a href="#">Read More</a>
+            <a href="{{ route('blog.show', ['blog' => $blog{'_id'}]) }}">Read More</a>
           </div>
         </div>
       @endif

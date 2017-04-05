@@ -40,4 +40,13 @@ class BlogController extends Controller{
   public function myProfile(){
     dd('profile');
   }
+
+  public function show($id){
+    $blogs = DB::collection('blogs')->where('_id', $id)->get();
+    $users = DB::collection('users')->get();
+    return view('blog.show', [
+      'blogs' => $blogs,
+      'users' => $users
+    ]);
+  }
 }
