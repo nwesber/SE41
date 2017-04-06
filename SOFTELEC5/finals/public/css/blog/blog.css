@@ -169,10 +169,10 @@ body {
 }
 
 .navbtn{
-    border-radius: 999em;
-    height: 27px;
+    border-radius: 999em !important;
+    height: 27px !important;
     padding-top: 1px !important;
-    margin-top: 10px;
+    margin-top: 10px !important;
     background: #02b875 !important;
     border-color: #02b875 !important;
     color: white !important;

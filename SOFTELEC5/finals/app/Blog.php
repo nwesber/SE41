@@ -29,14 +29,17 @@ class Blog extends Eloquent
       $blogTags[] = $tag;
     }
 
+    $fileImage = $request->file('fileUpload');
+    $destination_path = 'images/';
+    $image = str_random(6).'_'.$fileImage->getClientOriginalName();
+    $fileImage->move($destination_path, $image);
+
     $id = Auth::id();
     $blog = new Blog;
     $blog->title = $request->title;
-    $blog->short_content = $request->shortContent;
-    $blog->summary = $request->summary;
     $blog->content = $request->content;
+    $blog->image = $image;
     $blog->user_id = $id;
-    $blog->date_created = date("Y-m-d");
     $blog->deleted_at = null;
     $blog->save();
 

@@ -46,7 +46,7 @@
 
             @if (Auth::guest())
                <li><a href="#" class="btn btn-default btn-xs navbtn"
-               data-toggle="modal" data-target="#myModal">Get Started</a></li>
+               data-toggle="modal" data-target="#myModal"><strong>Get Started</strong></a></li>
             @else
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -138,14 +138,7 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="http://cloud.tinymce.com/stable/tinymce.min.js?apiKey=zjzlnpisviw5oas4htsem7w993fr17gm1dyfi3x3z0o6aobo"></script>
     <script src="{{ asset('js/bootstrap-tagsinput.min.js') }}"></script>
-    <script src="{{ asset('js/blog.js') }}"></script>
-    <script>tinymce.init({
-        selector:'textarea.editme',
-        menubar: false,
-        statusbar: false,
-        plugins: "advlist",
-     });
-    </script>
+    <script src="{{ asset('js/tinymce.js') }}"></script>
     <script type="text/javascript">
       $(document).keypress(
       function(event){
@@ -154,6 +147,6 @@
         }
       });
     </script>
-
+    <script src="{{ asset('js/blog.js') }}"></script>
   </body>
 </html>
