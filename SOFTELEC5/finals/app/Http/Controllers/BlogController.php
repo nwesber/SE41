@@ -16,13 +16,20 @@ use DateTime;
 class BlogController extends Controller{
 
   public function index(){
-    $blogs = Blog::all();
     $users = User::all();
-    //fiding articles via tags
-    /*$filteredTags = Blog::where('tags', 'MARVEL')->get();*/
-
+    $latestPosts = Blog::latest()->take(6)->get();
+    $comics = Blog::latest()->where('tags', 'comics')->take(6)->get();
+    $travel = Blog::latest()->where('tags', 'travel')->take(6)->get();
+    $food = Blog::latest()->where('tags', 'food')->take(6)->get();
+    $games = Blog::latest()->where('tags', 'games')->take(6)->get();
+    $movies = Blog::latest()->where('tags', 'movies')->take(6)->get();
     return view('home', [
-      'blogs' => $blogs,
+      'movies' => $movies,
+      'games' => $games,
+      'food' => $food,
+      'travel' => $travel,
+      'comics' => $comics,
+      'latest' => $latestPosts,
       'users' => $users
     ]);
   }
@@ -45,12 +52,15 @@ class BlogController extends Controller{
   }
 
   public function show($id){
-    dd($id);
-    $blogs = DB::collection('blogs')->where('_id', $id)->get();
-    $users = DB::collection('users')->get();
+    $blogs = Blog::where('_id', $id)->get();
+    $users = User::all();
     return view('blog.show', [
       'blogs' => $blogs,
       'users' => $users
     ]);
+  }
+
+  public function filterTags($tag){
+    dd($tag);
   }
 }

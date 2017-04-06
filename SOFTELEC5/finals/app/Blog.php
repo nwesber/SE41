@@ -26,7 +26,7 @@ class Blog extends Eloquent
 
     $filteredTags = explode(',', trim($tags));
     foreach($filteredTags as $tag){
-      $blogTags[] = strtoupper($tag);
+      $blogTags[] = strtolower($tag);
     }
 
     $fileImage = $request->file('fileUpload');

@@ -28,15 +28,15 @@ p {
 
 @foreach ($blogs as $i => $blog)
     @foreach($users as $i => $user)
-      @if($blog{'user_id'} == $user{'_id'})
+      @if($blog->user_id == $user->_id)
         <div class="container clearTop">
-        <h1>{{ $blog{'title'} }}</h1>
+        <h1>{{ $blog->title }}</h1>
         <h6>Tagged:
-         @foreach($blog{'tags'} as $tag => $t)
+         @foreach($blog->tags as $tag => $t)
           {{$t}},
          @endforeach
-          <span class="pull-right">29th February, 2016</span></h6>
-          {!! $blog{'content'} !!}
+          <span class="pull-right">{{ \Carbon\Carbon::parse($blog{'created_at'})->format('dS F, Y') }}</span></h6>
+          {!! $blog->content !!}
         </div>
       @endif
     @endforeach

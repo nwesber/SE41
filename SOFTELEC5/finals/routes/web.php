@@ -19,5 +19,8 @@ Route::get('/home', 'HomeController@index');
 Route::get('/article/{id}', 'BlogController@show');
 
 Route::post('/createBlog', 'BlogController@store');
-Route::get('/profile', 'BlogController@myProfile');
+Route::get('/profile/{id}', 'BlogController@myProfile');
 Route::get('/filter/{ tag }', 'BlogController@myProfile');
+
+//Filter Tags
+Route::get('/topic/{tag}', 'BlogController@filterTags');

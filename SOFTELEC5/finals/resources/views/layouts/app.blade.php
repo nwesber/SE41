@@ -25,10 +25,11 @@
         'csrfToken' => csrf_token(),
       ]) !!};
     </script>
+
   </head>
   <body>
     <div id="app">
-      <div class="navbar navbar-default navbar-fixed-top " style="margin: 0px; border: 0px;">
+      <div class="navbar navbar-default navbar-fixed-top " style="margin: 0px;">
         <div class="container">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".main-nav">
@@ -73,15 +74,15 @@
 
           <div class="collapse navbar-collapse main-nav">
             <ul class="nav navbar-nav">
-              <li><a href="#">TRAVEL</a></li>
+              <li><a href="{{ url('/topic/'. 'travel')  }}">TRAVEL</a></li>
               <li class="divider-vertical"></li>
-              <li><a href="#">GAMES</a></li>
+              <li><a href="{{ url('/topic/'. 'games')  }}">GAMES</a></li>
               <li class="divider-vertical"></li>
-              <li><a href="#">FOOD</a></li>
+              <li><a href="{{ url('/topic/'. 'food')  }}">FOOD</a></li>
               <li class="divider-vertical"></li>
-              <li><a href="#">MOVIES</a></li>
+              <li><a href="{{ url('/topic/'. 'movies')  }}">MOVIES</a></li>
               <li class="divider-vertical"></li>
-              <li><a href="#">COMICS</a></li>
+              <li><a href="{{ url('/topic/'. 'movies')  }}">COMICS</a></li>
             </ul>
           </div>
 
@@ -133,7 +134,14 @@
         </div>
       </div>
 
+        <div class="scroll-top-wrapper ">
+          <span class="scroll-top-inner">
+            <i class="fa fa-2x fa-arrow-circle-up"></i>
+          </span>
+        </div>
         @yield('content')
+
+
     </div>
 
     <!-- Scripts -->
