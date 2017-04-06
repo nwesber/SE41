@@ -19,13 +19,21 @@
                       <li><a href="#"><i class="fa fa-tag"></i> {{$t}}</a></li>
                       @break;
                       @endforeach
-                      <li><i class="fa fa-clock-o"></i> {{ \Carbon\Carbon::parse($blog{'created_at'})->diffForHumans() }}</li>
+                      <li><i class="fa fa-clock-o"></i> {{ \Carbon\Carbon::parse($blog{'created_at'})->format('M-d-Y') }}</li>
                     </ul>
-                    <a href="#0" class="card__title">{{ $blog->title }}</a>
+                    <a href="{{ url('/article/'. $blog->_id)  }}" class="card__title">{{ $blog->title }}</a>
                     <ul class="card__meta card__meta--last">
-                      <li><a href="#0"><i class="fa fa-user"></i> {{ $user->name }}</a></li>
-                      <li><a href="#0">Read More</li>
-                      <li><a href="#0"><i class="fa fa-facebook-square"></i> Share</a></a></li>
+                      @if (Auth::guest())
+                        <li><a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-user"></i> {{ $user->name }}</a></li>
+                      @else
+                        <li><a href="#0"><i class="fa fa-user"></i> {{ $user->name }}</a></li>
+                      @endif
+                      <li><a href="{{ url('/article/'. $blog->_id)  }}">Read More</a></li>
+                      <li>
+                        <a href="javascript:void(0);"
+                           onclick="shareFacebook('{{ $blog->_id }}', 'images/{{ $blog->image }}' , '{{ $blog->title }}') ">
+
+                        <i class="fa fa-facebook-square"></i> Share</a></li>
                     </ul>
                   </div>
                 </div>
@@ -37,4 +45,5 @@
     @endforeach
   </div>
 </div>
+
 @endsection

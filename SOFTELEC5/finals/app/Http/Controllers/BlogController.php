@@ -18,6 +18,9 @@ class BlogController extends Controller{
   public function index(){
     $blogs = Blog::all();
     $users = User::all();
+    //fiding articles via tags
+    /*$filteredTags = Blog::where('tags', 'MARVEL')->get();*/
+
     return view('home', [
       'blogs' => $blogs,
       'users' => $users
@@ -42,6 +45,7 @@ class BlogController extends Controller{
   }
 
   public function show($id){
+    dd($id);
     $blogs = DB::collection('blogs')->where('_id', $id)->get();
     $users = DB::collection('users')->get();
     return view('blog.show', [

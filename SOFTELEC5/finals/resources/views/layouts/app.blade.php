@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>Large</title>
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -122,6 +122,8 @@
                   <ul class="list-unstyled" style="line-height: 2">
                     <li><span class="fa fa-check text-success"></span> Write your own article.</li>
                     <li><span class="fa fa-check text-success"></span> Comment on any article.</li>
+                    <li><span class="fa fa-check text-success"></span> View other peoples articles.</li>
+                    <li><span class="fa fa-check text-success"></span> Search other peoples articles.</li>
                   </ul>
                   <p><a href="{{ url('/register') }}" class="btn btn-info btn-block">Yes please, register now!</a></p>
                 </div>
@@ -130,6 +132,7 @@
           </div>
         </div>
       </div>
+
         @yield('content')
     </div>
 
@@ -147,6 +150,7 @@
         }
       });
     </script>
+    <script src="{{ asset('js/fb.js') }}"></script>
     <script src="{{ asset('js/blog.js') }}"></script>
   </body>
 </html>

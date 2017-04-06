@@ -16,7 +16,7 @@ Route::get('/', 'BlogController@index');
 Auth::routes();
 Route::resource('blog', 'BlogController');
 Route::get('/home', 'HomeController@index');
-
+Route::get('/article/{id}', 'BlogController@show');
 
 Route::post('/createBlog', 'BlogController@store');
 Route::get('/profile', 'BlogController@myProfile');
