@@ -1,0 +1,29 @@
+1. Describe White Box testing.
+  White box testing is a testing technique, that examines the program structure and derives test data from the program logic/code.
+
+2. Describe Black Box testing.
+  Black box testing is a software testing method in which the internal structure/design/implementation of the item is being tested is not known to the tester.
+
+3. Which is better White or Black box testing?
+  Black box testing is better because you don't need to test the internal structure/program/logic of the software.
+
+4. What does a developer do, white or black box testing?
+  A developer must do a white box test on their software to ensure that logic/syntax are correct and all possible error handling should be present.
+
+5. Differentiate Validation and Verification.
+  The difference between validation and verification is that validation is the process of checking whether the specification captures the customer’s needs, while verification is the process of checking that the software meets the specification. Verification includes all activities associated with the producing high quality software testing while validation is an extremely subjective process of how well the systems address a real-world need.
+
+6. What is Path coverage?
+  Path coverage is a white box testing technique in which test case is executed in such a way that every path is executed at least once.
+
+7. What is Statement Coverage?
+  Statement coverage is a white box testing technique in which test case  is executed in such a way that every statement  of the code  is executed at least once.
+
+8. What is Functional Testing?
+  Functional Testing is a testing technique that is used to test the features/functionality of the system or Software, should cover all the scenarios including failure paths and boundary cases.
+
+9. Describe Equivalence Class Testing.
+  It is a software testing technique that divides the input test data of the application under test into each partition at least once of equivalent data from which test cases can be derived.
+
+10. Do you require programming knowledge in Black Box Testing?  Why or why not?
+  No, black box doesn't require any programming language because you in black box testing you don't care about the internal structure of the software you only care about the user experience and every detail that the end user will see.
