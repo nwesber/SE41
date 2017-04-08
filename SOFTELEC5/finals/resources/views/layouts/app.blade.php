@@ -19,6 +19,7 @@
     <link href="{{ asset('css/home/blogCard.css') }}" rel="stylesheet">
     <link href="{{ asset('css/blog/blog.css') }}" rel="stylesheet">
     <link href="{{ asset('css/bootstrap-tagsinput.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/blog/comment.css') }}" rel="stylesheet">
     <!-- Scripts -->
     <script>
       window.Laravel = {!! json_encode([

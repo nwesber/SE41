@@ -29,10 +29,12 @@ class Blog extends Eloquent
       $blogTags[] = strtolower($tag);
     }
 
+
     $fileImage = $request->file('fileUpload');
     $destination_path = 'images/';
     $image = str_random(6).'_'.$fileImage->getClientOriginalName();
     $fileImage->move($destination_path, $image);
+
 
     $id = Auth::id();
     $blog = new Blog;

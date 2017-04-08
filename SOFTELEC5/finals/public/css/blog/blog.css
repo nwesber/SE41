@@ -7,7 +7,6 @@
   clear: both;
   margin: 0 auto;
   width: 100%;
-  max-width: 700px;
 }
 .uploader label {
   float: left;
@@ -234,4 +233,10 @@ body {
 
 .bootstrap-tagsinput {
     width: 100%;
+}
+
+
+.homeCard{
+  width: 700px;
+  height: 250px;
 }

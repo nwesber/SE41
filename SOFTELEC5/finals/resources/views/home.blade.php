@@ -12,7 +12,7 @@
           <div class="grid">
             <div class="card">
               <div class="card__image">
-                <img class="img-responsive" src="{{ asset('images/' . $recent->image) }}" alt="" style="width: 777px; height: 300px;">
+                <img class="img-responsive homeCard" src="{{ asset('images/' . $recent->image) }}" alt="">
                 <div class="card__overlay card__overlay--black">
                   <div class="card__overlay-content">
                     <ul class="card__meta">
@@ -20,14 +20,14 @@
                       <li><a href="{{ url('/topic/'. $t)  }}"><i class="fa fa-tag"></i> {{$t}}</a></li>
                       @break;
                       @endforeach
-                      <li><i class="fa fa-clock-o"></i> {{ \Carbon\Carbon::parse($recent{'created_at'})->format('M-d-Y') }}</li>
+                      <li><i class="fa fa-clock-o"></i> {{ \Carbon\Carbon::parse($recent{'created_at'})->diffForHumans() }}</li>
                     </ul>
                     <a href="{{ url('/article/'. $recent->_id)  }}" class="card__title">{{ $recent->title }}</a>
                     <ul class="card__meta card__meta--last">
                       @if (Auth::guest())
                         <li><a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-user"></i> {{ $user->name }}</a></li>
                       @else
-                        <li><a href="{{ url('/article/'. $user->_id)  }}"><i class="fa fa-user"></i> {{ $user->name }}</a></li>
+                        <li><a href="{{ url('/profile/'. $user->_id)  }}"><i class="fa fa-user"></i> {{ $user->name }}</a></li>
                       @endif
                       <li><a href="{{ url('/article/'. $recent->_id)  }}">Read More</a></li>
                       <li>
@@ -55,7 +55,7 @@
           <div class="grid">
             <div class="card">
               <div class="card__image">
-                <img class="img-responsive" src="{{ asset('images/' . $blog->image) }}" alt="" style="width: 777px; height: 300px;">
+                <img class="img-responsive homeCard" src="{{ asset('images/' . $blog->image) }}" alt="">
                 <div class="card__overlay card__overlay--black">
                   <div class="card__overlay-content">
                     <ul class="card__meta">
@@ -98,7 +98,7 @@
           <div class="grid">
             <div class="card">
               <div class="card__image">
-                <img class="img-responsive" src="{{ asset('images/' . $blog->image) }}" alt="" style="width: 777px; height: 300px;">
+                <img class="img-responsive homeCard" src="{{ asset('images/' . $blog->image) }}" alt="">
                 <div class="card__overlay card__overlay--black">
                   <div class="card__overlay-content">
                     <ul class="card__meta">
@@ -141,7 +141,7 @@
           <div class="grid">
             <div class="card">
               <div class="card__image">
-                <img class="img-responsive" src="{{ asset('images/' . $blog->image) }}" alt="" style="width: 777px; height: 300px;">
+                <img class="img-responsive homeCard" src="{{ asset('images/' . $blog->image) }}" alt="">
                 <div class="card__overlay card__overlay--black">
                   <div class="card__overlay-content">
                     <ul class="card__meta">
@@ -184,7 +184,7 @@
           <div class="grid">
             <div class="card">
               <div class="card__image">
-                <img class="img-responsive" src="{{ asset('images/' . $blog->image) }}" alt="" style="width: 777px; height: 300px;">
+                <img class="img-responsive homeCard" src="{{ asset('images/' . $blog->image) }}" alt="">
                 <div class="card__overlay card__overlay--black">
                   <div class="card__overlay-content">
                     <ul class="card__meta">
@@ -227,7 +227,7 @@
           <div class="grid">
             <div class="card">
               <div class="card__image">
-                <img class="img-responsive" src="{{ asset('images/' . $blog->image) }}" alt="" style="width: 777px; height: 300px;">
+                <img class="img-responsive homeCard" src="{{ asset('images/' . $blog->image) }}" alt="">
                 <div class="card__overlay card__overlay--black">
                   <div class="card__overlay-content">
                     <ul class="card__meta">

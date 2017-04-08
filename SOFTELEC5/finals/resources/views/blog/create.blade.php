@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="container">
-  <div class="panel panel-default centerForm clearCreate" style="max-width: 700px;">
+  <div class="panel panel-default centerForm clearCreate" style="max-width: 1000px;">
     <div class="panel-body">
 
       <form action="/createBlog" method="POST" class="form-horizontal uploader" enctype="multipart/form-data">
@@ -21,7 +21,7 @@
             <h5><strong>Tags: </strong></h5>
           </div>
           <div class="col-md-11">
-            <input type="text" name="tags" id="tags" data-role="tagsinput"  placeholder="tags" />
+            <input type="text" name="tags" id="tags" data-role="tagsinput"/>
           </div>
         </div>
 
@@ -31,16 +31,17 @@
           </div>
           <div class="col-md-12">
             <textarea class="editme" cols="30" rows="10" name="content" id="content">Tell Us Your Story ...</textarea>
+             <input name="image" type="file" id="upload" class="hidden" onchange="">
           </div>
         </div>
 
 
         <div class="form-group">
           <div class="col-md-12">
-            <h5><strong>Thumbnail: </strong></h5>
+            <h5><strong>Thumbnail: </strong><small><br><i>*Recommended size: 600 x 315</i></small></h5>
           </div>
           <div class="col-md-12">
-            <input id="file-upload" type="file" name="fileUpload" accept="image/*" />
+            <input id="file-upload" type="file" name="fileUpload" accept="image/*" required="" />
 
             <label for="file-upload" id="file-drag">
               <img id="file-image" src="#" alt="Preview" class="hidden">
