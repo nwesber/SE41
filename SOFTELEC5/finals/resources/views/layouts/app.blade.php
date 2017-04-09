@@ -26,7 +26,14 @@
         'csrfToken' => csrf_token(),
       ]) !!};
     </script>
+    <style type="text/css">
 
+      .smaller-image {
+        width: 175px;
+      }
+
+
+    </style>
   </head>
   <body>
     <div id="app">
@@ -56,6 +63,7 @@
                 </a>
 
                 <ul class="dropdown-menu" role="menu">
+                  <li> <a href="{{ url('/profile/'. Auth::user()->id)  }}">Profile</a>
                   <li> <a href="{{ route('blog.create') }}">New Story</a>
                   <li>
                     <a href="{{ route('logout') }}"

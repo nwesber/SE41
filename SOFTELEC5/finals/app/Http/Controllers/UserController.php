@@ -17,7 +17,7 @@ use DateTime;
 class UserController extends Controller{
 
   public function myProfile($id){
-    dd('profile');
+    return view('profile.index');
   }
 
 }
