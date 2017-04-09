@@ -60,30 +60,106 @@
                       <div class="comment-avatar">
                         <img src="{{ asset('images/' . 'guest.png') }}">
                       </div>
-                      <form class="form" name="form">
-                        <textarea class="input" placeholder="Add comment..." required></textarea>
+                      <form class="form" name="form" action="/comment" method="POST">
+                        {{ csrf_field() }}
+                        <input type="hidden" id="post_id" name="post_id" value="{{ $blog->id }}">
+                        <textarea class="input" id="comment" name="comment" placeholder="Add comment..." required></textarea>
                         <input type="submit" value="Add Comment">
                       </form>
                     @endif
                   </div>
 
-                  <div class="comment">
-                    <div class="comment-avatar">
-                      <img src="{{ asset('images/' . 'guest.png') }}">
-                    </div>
+<!--                   @foreach ($comments as $i => $comment)
+                    @if($blog->id == $comment->blog_id )
 
-                    <div class="comment-box">
-                      <div class="comment-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto temporibus iste nostrum dolorem natus recusandae incidunt voluptatum.</div>
-                      <div class="comment-footer">
-                        <div class="comment-info">
-                          <span class="comment-author">
-                            <a href="mailto:sexar@pagelab.io">Sexar</a>
-                          </span>
-                          <span class="comment-date">Feb 2, 2013 11:32:04 PM</span>
+                      @foreach($users as $i => $user)
+                        @if($user->id == $comment->user_id)
+
+                        <div class="comment">
+                          <div class="comment-avatar">
+                            <img src="{{ asset('images/' . 'guest.png') }}">
+                          </div>
+
+
+                          <div class="comment-box">
+                            <div class="comment-text">{{ $comment->comment }}</div>
+                            <div class="comment-footer">
+                              <div class="comment-info">
+                                <span class="comment-author">
+                                  <a href="{{ url('/profile/'. $user->_id)  }}">{{ $user->name }}</a>
+                                </span>
+                                <span class="comment-date">{{  \Carbon\Carbon::parse( $comment->created_at )->diffForHumans() }}</span>
+
+                                @if(Auth::guest())
+                                @else
+                                  @if(Auth::user()->id == $blog->user_id || Auth::user()->id == $comment->user_id )
+                                  <span class="pull-right">
+                                    <a href="{{ url('/comment/'. $comment->_id)  }}">
+                                      <i class="fa fa-trash" aria-hidden="true"></i>
+                                        &nbsp;&nbsp;Delete
+                                    </a>
+                                  </span>
+                                  @else
+                                  @endif
+                                @endif
+
+                              </div>
+                            </div>
+                          </div>
                         </div>
-                      </div>
-                    </div>
-                  </div>
+
+                        @endif
+                      @endforeach
+
+                    @endif
+                  @endforeach
+ -->
+
+
+                  @foreach ($comments as $i => $comment)
+                    @if($blog->id == $comment->blog_id )
+                      @foreach($blog->comments as $blog_comment)
+                        @if($blog_comment == $comment->id)
+                          @foreach($users as $i => $user)
+                            @if($user->id == $comment->user_id)
+                            <div class="comment">
+                              <div class="comment-avatar">
+                                <img src="{{ asset('images/' . 'guest.png') }}">
+                              </div>
+
+
+                              <div class="comment-box">
+                                <div class="comment-text">{{ $comment->comment }}</div>
+                                <div class="comment-footer">
+                                  <div class="comment-info">
+                                    <span class="comment-author">
+                                      <a href="{{ url('/profile/'. $user->_id)  }}">{{ $user->name }}</a>
+                                    </span>
+                                    <span class="comment-date">{{  \Carbon\Carbon::parse( $comment->created_at )->diffForHumans() }}</span>
+
+                                    @if(Auth::guest())
+                                    @else
+                                      @if(Auth::user()->id == $blog->user_id || Auth::user()->id == $comment->user_id )
+                                      <span class="pull-right">
+                                        <a href="{{ url('/comment/'. $comment->_id)  }}">
+                                          <i class="fa fa-trash" aria-hidden="true"></i>
+                                            &nbsp;&nbsp;Delete
+                                        </a>
+                                      </span>
+                                      @else
+                                      @endif
+                                    @endif
+
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            @endif
+                          @endforeach
+                        @endif
+                      @endforeach
+                    @endif
+                  @endforeach
 
                 </div>
               </div>

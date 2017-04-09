@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Blog;
+use App\Comment;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Eloquent\Collection;
 use Jenssegers\Mongodb\Eloquent\Model as Model;
@@ -47,16 +48,14 @@ class BlogController extends Controller{
     return redirect('/');
   }
 
-  public function myProfile(){
-    dd('profile');
-  }
-
   public function show($id){
     $blogs = Blog::where('_id', $id)->get();
+    $comments = Comment::latest()->get();
     $users = User::all();
     return view('blog.show', [
       'blogs' => $blogs,
-      'users' => $users
+      'users' => $users,
+      'comments' => $comments
     ]);
   }
 
