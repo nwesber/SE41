@@ -7,7 +7,7 @@ What is mongoDB?
 	Document oriented DB
 	non-relational (no transactions)
 	JSON Data type
-	Horizontal Scaling 
+	Horizontal Scaling
 		- upgrade hardware of server.
 		- 2 or more servers.
 		- very cheap
@@ -19,7 +19,7 @@ What is mongoDB?
 	dynamic schema - flexible table columns
 
 	typical json document
-	
+
 	db.collection.insert({
 		"firstName": "Kyel",
 		"lastName": "David",
@@ -43,4 +43,124 @@ What is mongoDB?
 	Embedded Document
 		can contain entire documents
 
-	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Major Exam #1
+
+Part 1
+	1. Query the elem collection which resides under our db1 database, and what “find” query will result into this single result: PS You must use a logical operator. And you must search the contents of the array?
+		db.elems.find( { "a" : { "$elemMatch" :  { "b" : 1, "c" : 4 }  } })
+
+	2. How many entries are there on the elem collection
+		db.elems.find().count()
+
+Part 2
+	3. Create a collection called prutas. & Copy the contents of apple collections into prutas
+		db.apples.copyTo("prutas")
+
+	4. Insert atleast 10 different fruits and insert them onto the prutas collection using a Javascript loop. This is the format of the collection to be inserted into prutas collection.
+		var fruits = [ "apple", "mango", 	"strawberry", "orange", "banana", "peach", "pear", "cherry", "pineapple", "lemon" ];
+
+		for(i = 0; i <= fruits.length; i++){
+			db.prutas.insert({
+				"fruit": fruits[i],
+				"tags" : [
+					"taste" : "mildly-tart",
+					"color" : "red"
+				]
+			})
+		}
+
+	5. Find all documents which tastes “midly tart”
+		db.prutas.find( { taste: { $in: ["mildly-tart" ] } } )
+
+Part 3
+
+	6. Combine all of the quiz scores.
+		var sum = 0;
+		var scores = db.scores.find({ "kind" : "quiz"});
+			for(i = 0; i <= scores.length; i++){
+				sum += scores.scores[i];
+			}
+
+			return sum;
+
+	7. Which Student has the highest average scores(equiz,essay and etc)
+			var average = [];
+			var quiz = db.scores.find({ "kind" : "quiz"});
+			var essay = db.scores.find({ "kind" : "essay"});
+			var exam = db.scores.find({ "kind" : "exam"});
+			var user = db.scores.find();
+
+			for(i = 0; i <= user.length; i++){
+				for(i = 0; i <= exam.length; i++){
+					for(i = 0; i <= essay.length; i++){
+						for(i = 0; i <= quiz.length; i++){
+							if(exam.student == user.id && essay.student == user.id && quiz.student == user.id){
+								average = quiz.score + essay.score + exam.score / 3;
+							}
+
+						}
+					}
+				}
+			}
+
+
+		  return Math.max(average);
+
+	8. How many students got less than a 60 on their quiz?
+		db.scores.find( { "kind" : "quiz", "score" : { $lt : 60 } } ).count()
+
+	9. Find the student with the lowest number which has the lowest overall quiz score and then delete all the scores for that student
+		db.scores.find({ "kind" : "quiz"}).sort({score: 1}).limit(1)
+		db.scores.update( { "_id" : id}, { $pull: { scores: null } } )
+
+
+
+
+
+
+
+
+
+function(k, v) {
+  var i, sum = 0;
+  for (i in v) {
+    sum += v[i];
+  }
+  return sum;
+}
+
+
+
+
+db.scores.find({ "kind" : "quiz"});
+db.scores.find( { "kind" : "quiz", "score" : { $lt : 60 } } ).count()
+
+
+db.scores.find({ "kind" : "quiz"}).sort({score: 1}).limit(1)
+db.scores.remove({ "kind" : "quiz"}).sort({score: 1}).limit(1)
+
+
