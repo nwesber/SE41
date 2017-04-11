@@ -160,3 +160,67 @@ Project Scheduling and Cost (Excel)
 
 ##### Vendor Relationship Issues
   * Problems with outside contractors, vendors or suppliers can impact your project budget. Use only vendors who have an excellent reputation for being reliable and skilled. Lack of professionalism, inability to meet deadlines and shoddy work will mean locating another vendor during the project, and paying new fees to contract a replacement.
+ 
+# Week 5
+
+##### Project Management Framework
+
+###### Project Scope Management
+  * involves defining and managing all the work required to complete the project successfully
+###### Project Time Management
+  * includes estimating how long it will take to complete the work, developing an aceptable project schedule, and ensuring timely completion of the project.
+###### Project Cost Management
+  * consists of preparing and managing the budget for the project
+   * ###### Software Cost = Identify!!
+   * ###### Hardware Cost
+   * ###### Developer Cost
+  
+###### Project Quality Management
+  * ensures that the project will satisfy the stated or implied needs for which it was undertaken
+  
+###### Project Human Resources Management
+  * is concerned with making effective use of the people involved with the project
+
+###### Project Communications Management
+  * involves generating, collecting, disseminating, and storing project information.
+  
+###### Project Risk Management
+  * includes identifying, analyzing, and responding to risks related to the project
+  
+###### Project Procurement Management
+  * involves acquiring or procuring goods and services for a project from outside the performing organization
+
+###### Project Stakeholder Management
+  * includes identifying and analyzing stakeholder needs while managing and controlling their engagement throughout the life of the project
+
+###### Project Integration Management
+  * is an overarching function that affects and is affected by all of the other knowledge areas
+
+##### Project Stakeholders 
+  * are the people involved in or affected by project activities
+  * stakeholders include
+   * Project Sponsor
+   * Project Manager
+   * Project Team
+   * Support Stuff
+   * Customers
+   * Users
+   * Suppliers
+   * Opponents of the Project
+
+
+##### Nine Project Managment Knowledge Areas
+  * Four Core Knowledge
+  * Four Facilitating Knowledge
+  * One Knowledge Area
+  * All knowledge area are important
+
+##### Project Managment Knowledge Tools and Techniques
+  * Gantt charts, network diagrams, critical path analysis, critical chain scheduling
+
+##### Project Portfolio Management
+  * many organizations support an emerging business Project Portfolio Management
+
+
+
+
