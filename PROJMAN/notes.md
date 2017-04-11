@@ -221,6 +221,19 @@ Project Scheduling and Cost (Excel)
 ##### Project Portfolio Management
   * many organizations support an emerging business Project Portfolio Management
 
+##### Project Success Factors
+  * Executive Support
+  * User involvement
+  * Experienced project manager
+  * Clear business objectives
+  * Minimized scope
+  * Standard software infrastructure
+  * Firm basic requirements
+  * Formal methdology
+  * Reliable estimates
+  * Other criteria, such as small milestones, proper planning, competent staff, and ownership
+  
+  
 
 
 
