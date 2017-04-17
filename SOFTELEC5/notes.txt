@@ -71,7 +71,7 @@ Major Exam #1
 
 Part 1
 	1. Query the elem collection which resides under our db1 database, and what “find” query will result into this single result: PS You must use a logical operator. And you must search the contents of the array?
-		db.elems.find( { "a" : { "$elemMatch" :  { "b" : 1, "c" : 4 }  } })
+		db.elems.find( { "a" : { "$elemMatch" :  { "b" : 1, "c" : 4 }  } } )
 
 	2. How many entries are there on the elem collection
 		db.elems.find().count()
@@ -164,3 +164,75 @@ db.scores.find({ "kind" : "quiz"}).sort({score: 1}).limit(1)
 db.scores.remove({ "kind" : "quiz"}).sort({score: 1}).limit(1)
 
 
+
+
+Schema Desgin
+
+
+=================================
+user
+	id
+	name
+	email
+	password
+=================================
+product
+	id
+	stock
+	owner
+	product details {
+		"price"
+		"title"
+		"description"
+		"discount"
+	}
+
+	catalog {
+		catalog_id
+	}
+
+	categories {
+		"laptop"
+		"acces"
+	}
+
+	comments {
+		comment_id
+	}
+	rating {
+		rating_id
+	}
+=================================
+catalog
+	id
+	catalog {
+		""
+	}
+=================================
+comments
+	id
+	user_id
+	comment
+=================================
+shopping_cart
+	id
+	user_id
+	shipping details {
+		""
+	}
+	product{
+		product_id
+	}
+=================================
+promo
+	id
+	product{
+		product_id
+	}
+	promo description
+	price
+=================================
+rating
+	id
+	user_id
+	rating
