@@ -233,7 +233,19 @@ Project Scheduling and Cost (Excel)
   * Reliable estimates
   * Other criteria, such as small milestones, proper planning, competent staff, and ownership
   
-  
+##### Suggested Skills for Project Managers
+  * Project Managers need a wide variety of skills
+  * They should
+   * Be comfortable
+  * Project managers need both hard and soft skill
+   * Hard skills include product knowledge and knowing how to use various project management tools
+   * Soft skills include able to work w/ various types of people
+  * Communication Skills ( Listens, persuades )
+  * Organizational Skills ( Plans, sets goals, analyzes )
+  * Team-building Skills ( Shows empathy, motivates, promotes espirit de corps )
+  * Leadership Skills ( Sets examples, provides vision, [Big Picture], delegates, positive, energetic)
+  * Coping Skills ( Flexible, creative, patient, persistent )
+  * Technology Skills ( Experience, project knowledge )
 
 
 
