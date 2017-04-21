@@ -10,15 +10,14 @@
     <title>Large</title>
 
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.3/summernote.css" rel="stylesheet">
+    <link href="//cdnjs.cloudflare.com/ajax/libs/summernote/0.8.3/summernote.css" rel="stylesheet">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
     <link href="//code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" type="text/css" rel="stylesheet">
     <link href="{{ asset('css/bootstrap-tokenfield.min.css') }}" rel="stylesheet">
     <link href="{{ asset('css/tokenfield-typeahead.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/home/blogCard.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/blog/blogCard.css') }}" rel="stylesheet">
     <link href="{{ asset('css/bootstrap-tagsinput.css') }}" rel="stylesheet">
     <link href="{{ asset('css/blog/comment.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/loader.css') }}" rel="stylesheet">
     <link href="{{ asset('css/pace.css') }}" rel="stylesheet">
 
     <script> window.Laravel = {!! json_encode([ 'csrfToken' => csrf_token(), ]) !!}; </script>
