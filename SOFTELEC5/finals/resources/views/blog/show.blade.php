@@ -1,18 +1,44 @@
 @extends('layouts.app')
 
 @section('content')
-
   @foreach ($blogs as $i => $blog)
     @foreach($users as $i => $user)
       @if($blog->user_id == $user->_id)
         <div class="row">
           <div class="container clearTop">
+             @if(Auth::guest())
+              @else
+                @if (Auth::user()->id == $user->_id)
+                  <div class="col-md-12">
+                    <div class="panel panel-default">
+                      <div class="panel-body">
+                        <h4 style="display: inline-block;"><strong>Article Settings</strong></h4>
+                        <div class="pull-right">
+                          <a href="{{ url('/article/edit/'. $blog->_id)  }}" class="btn btn-success"
+                             style=" background-color: #02b875 !important; color: white;">
+                             Edit Article
+                          </a>
+                          <a href="#" class="btn btn-danger"
+                             style=" background-color: #E54B4B !important; color: white;">
+                             Delete Article
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                @else
+                @endif
+              @endif
             <div class="col-md-9">
               <div class="panel panel-default">
                 <div class="panel-body">
                   <h3><strong>{{ $blog->title }}</strong></h3>
                   <h6>
-                    Posted By: <a href="{{ url('/profile/'. $user->_id)  }}"> {{ $user->name }} </a>
+                    @if (Auth::guest())
+                      Posted By: <a href="#" data-toggle="modal" data-target="#myModal"> {{ $user->name }} </a>
+                    @else
+                      Posted By: <a href="{{ url('/profile/'. $user->_id)  }}"> {{ $user->name }} </a>
+                    @endif
                     <span class="pull-right">
                       {{ \Carbon\Carbon::parse($blog{'created_at'})->format('dS F, Y') }}
                     </span>
@@ -22,16 +48,6 @@
               </div>
             </div>
             <div class="col-md-3">
-              @if(Auth::guest())
-              @else
-                @if (Auth::user()->id == $user->_id)
-                <div>
-                  <button class="btn btn-success" style="width: 100%;">Article Settings</button>
-                  <div style="margin-bottom: 20px;"></div>
-                </div>
-                @else
-                @endif
-              @endif
               <div class="panel panel-default" >
                 <div class="panel-body">
                   <div class="tags">
@@ -68,53 +84,6 @@
                       </form>
                     @endif
                   </div>
-
-<!--                   @foreach ($comments as $i => $comment)
-                    @if($blog->id == $comment->blog_id )
-
-                      @foreach($users as $i => $user)
-                        @if($user->id == $comment->user_id)
-
-                        <div class="comment">
-                          <div class="comment-avatar">
-                            <img src="{{ asset('images/' . 'guest.png') }}">
-                          </div>
-
-
-                          <div class="comment-box">
-                            <div class="comment-text">{{ $comment->comment }}</div>
-                            <div class="comment-footer">
-                              <div class="comment-info">
-                                <span class="comment-author">
-                                  <a href="{{ url('/profile/'. $user->_id)  }}">{{ $user->name }}</a>
-                                </span>
-                                <span class="comment-date">{{  \Carbon\Carbon::parse( $comment->created_at )->diffForHumans() }}</span>
-
-                                @if(Auth::guest())
-                                @else
-                                  @if(Auth::user()->id == $blog->user_id || Auth::user()->id == $comment->user_id )
-                                  <span class="pull-right">
-                                    <a href="{{ url('/comment/'. $comment->_id)  }}">
-                                      <i class="fa fa-trash" aria-hidden="true"></i>
-                                        &nbsp;&nbsp;Delete
-                                    </a>
-                                  </span>
-                                  @else
-                                  @endif
-                                @endif
-
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-
-                        @endif
-                      @endforeach
-
-                    @endif
-                  @endforeach
- -->
-
 
                   @foreach ($comments as $i => $comment)
                     @if($blog->id == $comment->blog_id )

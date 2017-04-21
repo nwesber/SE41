@@ -5,35 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>Large</title>
 
-    <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.3/summernote.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
     <link href="//code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" type="text/css" rel="stylesheet">
     <link href="{{ asset('css/bootstrap-tokenfield.min.css') }}" rel="stylesheet">
     <link href="{{ asset('css/tokenfield-typeahead.min.css') }}" rel="stylesheet">
     <link href="{{ asset('css/home/blogCard.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/blog/blog.css') }}" rel="stylesheet">
     <link href="{{ asset('css/bootstrap-tagsinput.css') }}" rel="stylesheet">
     <link href="{{ asset('css/blog/comment.css') }}" rel="stylesheet">
-    <!-- Scripts -->
-    <script>
-      window.Laravel = {!! json_encode([
-        'csrfToken' => csrf_token(),
-      ]) !!};
-    </script>
-    <style type="text/css">
+    <link href="{{ asset('css/loader.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/pace.css') }}" rel="stylesheet">
 
-      .smaller-image {
-        width: 175px;
-      }
-
-
-    </style>
+    <script> window.Laravel = {!! json_encode([ 'csrfToken' => csrf_token(), ]) !!}; </script>
   </head>
   <body>
     <div id="app">
@@ -51,8 +39,6 @@
           </div>
 
           <ul class="nav navbar-nav navbar-right">
-              <!-- Authentication Links -->
-
             @if (Auth::guest())
                <li><a href="#" class="btn btn-default btn-xs navbtn"
                data-toggle="modal" data-target="#myModal"><strong>Get Started</strong></a></li>
@@ -153,21 +139,14 @@
 
     </div>
 
-    <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="http://cloud.tinymce.com/stable/tinymce.min.js?apiKey=zjzlnpisviw5oas4htsem7w993fr17gm1dyfi3x3z0o6aobo"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/summernote/0.8.3/summernote.js"></script>
     <script src="{{ asset('js/bootstrap-tagsinput.min.js') }}"></script>
-    <script src="{{ asset('js/tinymce.js') }}"></script>
-    <script type="text/javascript">
-      $(document).keypress(
-      function(event){
-       if (event.which == '13') {
-          event.preventDefault();
-        }
-      });
-    </script>
+    <script src="{{ asset('js/summernote.js') }}"></script>
     <script src="{{ asset('js/fb.js') }}"></script>
     <script src="{{ asset('js/blog.js') }}"></script>
+    <script src="{{ asset('js/pace.js') }}"></script>
   </body>
 </html>

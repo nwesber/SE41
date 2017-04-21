@@ -370,7 +370,7 @@ input[type="file"]::-webkit-file-upload-button {
 }
 
 .clearCreate{
-  margin-top: 80px;
+  margin-top: 35px;
 }
 
 @media screen and (max-width: 736px) {
@@ -572,4 +572,83 @@ a:hover {
 }
 .card__meta li > a {
   color: #f8f8f8;
+}
+
+.btn-link{
+  border:none;
+  outline:none;
+  background:none;
+  cursor:pointer;
+  padding:0;
+  color: white;
+  text-transform: none;
+}
+
+.btn-link:hover {
+  color: white;
+}
+
+.btn-link-title{
+  color: white;
+  display: inline-block;
+  font-family: "Montserrat";
+  font-size: 1.5em;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 0.75em;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.btn-link-title:hover {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+}
+
+.bootstrap-tagsinput {
+  width: 100%;
+}
+
+.centerForm {
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navbtn{
+  border-radius: 999em;
+  height: 27px;
+  padding-top: 1px !important;
+  margin-top: 10px;
+}
+
+.navbtn{
+  border-radius: 999em !important;
+  height: 27px !important;
+  padding-top: 1px !important;
+  margin-top: 10px !important;
+  background: #02b875 !important;
+  border-color: #02b875 !important;
+  color: white !important;
+}
+
+@media screen and (max-width: 736px) {
+  .navbtn{
+    border-radius: 999em;
+    height: 27px;
+    padding-top: 1px !important;
+    margin-top: 10px;
+    background: #02b875 !important;
+    border-color: #02b875 !important;
+    color: white !important;
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+  }
+}
+
+.homeCard{
+  width: 700px;
+  height: 250px;
 }

@@ -1,7 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-
 <div class="container clearTop">
   <div class="site__wrapper">
     <h3><strong><a href="{{ url('/topic/'. 'recent')  }}" style="color: #02b875;">Latest Post</a></strong></h3>

@@ -29,6 +29,7 @@ class Blog extends Eloquent
       $blogTags[] = strtolower($tag);
     }
 
+    $meta_title = Blog::seoUrl($request->title);
 
     $fileImage = $request->file('fileUpload');
     $destination_path = 'images/';
@@ -39,6 +40,7 @@ class Blog extends Eloquent
     $id = Auth::id();
     $blog = new Blog;
     $blog->title = $request->title;
+    $blog->meta_title = $meta_title;
     $blog->content = $request->content;
     $blog->image = $image;
     $blog->user_id = $id;
@@ -54,6 +56,14 @@ class Blog extends Eloquent
       return DB::collection('blogs')->get();
     });
     return $result;
+  }
+
+  public static function seoUrl($string) {
+    $string = strtolower($string);
+    $string = preg_replace("/[^a-z0-9_\s-]/", "", $string);
+    $string = preg_replace("/[\s-]+/", " ", $string);
+    $string = preg_replace("/[\s_]/", "-", $string);
+    return $string;
   }
 
 }

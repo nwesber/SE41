@@ -48,8 +48,8 @@ class BlogController extends Controller{
     return redirect('/');
   }
 
-  public function show($id){
-    $blogs = Blog::where('_id', $id)->get();
+  public function show(Request $request, $id){
+    $blogs = Blog::where('_id', $request->id)->get();
     $comments = Comment::latest()->get();
     $users = User::all();
     return view('blog.show', [
@@ -57,6 +57,21 @@ class BlogController extends Controller{
       'users' => $users,
       'comments' => $comments
     ]);
+  }
+
+  public function edit($id){
+    if (Auth::check()){
+      $blogs = Blog::where('_id', $id)->get();
+
+      foreach ($blogs as $blog) {
+        $blogTag = implode(",", $blog->tags);
+      }
+
+
+      return view('blog.edit', compact('blogs', 'blogTag'));
+    }else{
+      return redirect('/');
+    }
   }
 
   public function filterTags($tag){
