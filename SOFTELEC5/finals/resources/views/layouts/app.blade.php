@@ -11,8 +11,8 @@
 
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="//cdnjs.cloudflare.com/ajax/libs/summernote/0.8.3/summernote.css" rel="stylesheet">
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
     <link href="//code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" type="text/css" rel="stylesheet">
+    <link href="{{ asset('css/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet">
     <link href="{{ asset('css/bootstrap-tokenfield.min.css') }}" rel="stylesheet">
     <link href="{{ asset('css/tokenfield-typeahead.min.css') }}" rel="stylesheet">
     <link href="{{ asset('css/blog/blogCard.css') }}" rel="stylesheet">
@@ -24,7 +24,7 @@
   </head>
   <body>
     <div id="app">
-      <div class="navbar navbar-default navbar-fixed-top " style="margin: 0px;">
+      <div class="navbar navbar-default navbar-fixed-top navsettings">
         <div class="container">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".main-nav">
@@ -57,7 +57,7 @@
                       Logout
                     </a>
 
-                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="logoutForm">
                       {{ csrf_field() }}
                     </form>
                   </li>

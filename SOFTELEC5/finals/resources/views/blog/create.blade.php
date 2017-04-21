@@ -4,7 +4,7 @@
 <div class="container">
   <form action="/createBlog" method="POST" class="form-horizontal uploader" enctype="multipart/form-data">
 
-  <div class="panel panel-default centerForm clearCreate" style="max-width: 1000px;">
+  <div class="panel panel-default centerForm clearCreate panelSettings">
     <div class="panel-body">
       <h4 style="display: inline-block;"><strong>New Article</strong></h4>
       <button class="pull-right btn btn-success " type="submit"><i class="fa fa-floppy-o" aria-hidden="true"></i>&nbsp; &nbsp;Save Event</button>
@@ -12,7 +12,7 @@
   </div>
 
 
-  <div class="panel panel-default centerForm" style="max-width: 1000px;">
+  <div class="panel panel-default centerForm panelSettings">
     <div class="panel-body">
 
 
@@ -46,7 +46,7 @@
             </div>
             <div class="col-md-6">
               <h5><strong>Preview:</strong></h5>
-              <img class="thumbnail" style="width: 450px !important; height: 300px !important;" id="blah" src="http://placehold.it/450x300">
+              <img class="thumbnail" id="blah" src="http://placehold.it/450x300">
             </div>
           </div>
         </div>
@@ -55,5 +55,9 @@
     </div>
   </div>
 </div>
-
+<script type="text/javascript">
+$('html').bind('keypress', function(e){
+  if(e.keyCode == 13){ return false; }
+});
+</script>
 @endsection

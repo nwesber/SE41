@@ -20,6 +20,10 @@ class Blog extends Eloquent
     $this->storage = Redis::Connection();
   }
 
+  public static function getLatestArticles(){
+    return Blog::latest()->take(6)->remember(10)->get();
+  }
+
   public static function create(Request $request){
     $blogTags = [];
     $tags = $request->tags;

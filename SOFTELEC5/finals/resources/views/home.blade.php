@@ -3,8 +3,8 @@
 @section('content')
 <div class="container clearTop">
   <div class="site__wrapper">
-    <h3><strong><a href="{{ url('/topic/'. 'recent')  }}" style="color: #02b875;">Latest Post</a></strong></h3>
-    <div style="margin-bottom: 40px;"></div>
+    <h3><strong><a href="{{ url('/topic/'. 'recent')  }}" class="tagColor">Latest Post</a></strong></h3>
+    <div class="homeMargin"></div>
     @foreach ($latest as $i => $recent)
       @foreach($users as $i => $user)
         @if($recent->user_id == $user->_id)
@@ -46,8 +46,8 @@
   </div>
 
   <div class="site__wrapper">
-    <h3><strong><a href="{{ url('/topic/'. 'comics')  }}" style="color: #02b875;">Comics</a></strong></h3>
-    <div style="margin-bottom: 40px;"></div>
+    <h3><strong><a href="{{ url('/topic/'. 'comics')  }}" class="tagColor">Comics</a></strong></h3>
+    <div class="homeMargin"></div>
     @foreach ($comics as $i => $blog)
       @foreach($users as $i => $user)
         @if($blog->user_id == $user->_id)
@@ -89,8 +89,8 @@
   </div>
 
   <div class="site__wrapper">
-    <h3><strong><a href="{{ url('/topic/'. 'travel')  }}" style="color: #02b875;">Travel</a></strong></h3>
-    <div style="margin-bottom: 40px;"></div>
+    <h3><strong><a href="{{ url('/topic/'. 'travel')  }}" class="tagColor">Travel</a></strong></h3>
+    <div class="homeMargin"></div>
     @foreach ($travel as $i => $blog)
       @foreach($users as $i => $user)
         @if($blog->user_id == $user->_id)
@@ -132,8 +132,8 @@
   </div>
 
   <div class="site__wrapper">
-    <h3><strong><a href="{{ url('/topic/'. 'food')  }}" style="color: #02b875;">Food</a></strong></h3>
-    <div style="margin-bottom: 40px;"></div>
+    <h3><strong><a href="{{ url('/topic/'. 'food')  }}" class="tagColor">Food</a></strong></h3>
+    <div class="homeMargin"></div>
     @foreach ($food as $i => $blog)
       @foreach($users as $i => $user)
         @if($blog->user_id == $user->_id)
@@ -175,8 +175,8 @@
   </div>
 
   <div class="site__wrapper">
-    <h3><strong><a href="{{ url('/topic/'. 'games')  }}" style="color: #02b875;">Games</a></strong></h3>
-    <div style="margin-bottom: 40px;"></div>
+    <h3><strong><a href="{{ url('/topic/'. 'games')  }}" class="tagColor">Games</a></strong></h3>
+    <div class="homeMargin"></div>
     @foreach ($games as $i => $blog)
       @foreach($users as $i => $user)
         @if($blog->user_id == $user->_id)
@@ -218,8 +218,8 @@
   </div>
 
   <div class="site__wrapper">
-    <h3><strong><a href="{{ url('/topic/'. 'movies')  }}" style="color: #02b875;">Movies</a></strong></h3>
-    <div style="margin-bottom: 40px;"></div>
+    <h3><strong><a href="{{ url('/topic/'. 'movies')  }}" class="tagColor">Movies</a></strong></h3>
+    <div class="homeMargin"></div>
     @foreach ($movies as $i => $blog)
       @foreach($users as $i => $user)
         @if($blog->user_id == $user->_id)

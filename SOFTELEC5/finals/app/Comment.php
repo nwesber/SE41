@@ -36,9 +36,9 @@ class Comment extends Eloquent
 
   }
 
-  public static function fetchAll(){
-    $result = Cache::remember('blog_posts', 10 , function(){
-      return DB::collection('blogs')->get();
+  public static function fetchLatestComments(){
+    $result = Cache::remember('latest_comments', 10 , function(){
+      return Comment::latest()->get();
     });
     return $result;
   }

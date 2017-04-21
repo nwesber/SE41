@@ -16,31 +16,24 @@ use Carbon;
 use DateTime;
 class BlogController extends Controller{
 
+  public function __construct(){
+    $this->storage = Redis::Connection();
+  }
+
   public function index(){
     $users = User::all();
-    $latestPosts = Blog::latest()->take(6)->get();
+    $latest = Blog::latest()->take(6)->get();
     $comics = Blog::latest()->where('tags', 'comics')->take(6)->get();
     $travel = Blog::latest()->where('tags', 'travel')->take(6)->get();
     $food = Blog::latest()->where('tags', 'food')->take(6)->get();
     $games = Blog::latest()->where('tags', 'games')->take(6)->get();
     $movies = Blog::latest()->where('tags', 'movies')->take(6)->get();
-    return view('home', [
-      'movies' => $movies,
-      'games' => $games,
-      'food' => $food,
-      'travel' => $travel,
-      'comics' => $comics,
-      'latest' => $latestPosts,
-      'users' => $users
-    ]);
+    return view('home', [ 'movies' => $movies, 'games' => $games, 'food' => $food, 'travel' => $travel, 'comics' => $comics, 'latest' => $latest, 'users' => $users ]);
   }
 
   public function create(){
-    if (Auth::check()){
-      return view('blog.create');
-    }else{
-      return redirect('/');
-    }
+    if (Auth::check()) { return view('blog.create'); }
+    else{ return redirect('/'); }
   }
 
   public function store(Request $request){
@@ -52,23 +45,16 @@ class BlogController extends Controller{
     $blogs = Blog::where('_id', $request->id)->get();
     $comments = Comment::latest()->get();
     $users = User::all();
-    return view('blog.show', [
-      'blogs' => $blogs,
-      'users' => $users,
-      'comments' => $comments
-    ]);
+    return view('blog.show', compact('blogs', 'users', 'comments'));
   }
 
   public function edit($id){
     if (Auth::check()){
       $blogs = Blog::where('_id', $id)->get();
-      foreach ($blogs as $blog) {
-        $blogTag = implode(",", $blog->tags);
-      }
+      foreach ($blogs as $blog) { $blogTag = implode(",", $blog->tags); }
       return view('blog.edit', compact('blogs', 'blogTag'));
-    }else{
-      return redirect('/');
     }
+    else{ return redirect('/'); }
   }
 
   public function filterTags($tag){
