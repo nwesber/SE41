@@ -10,11 +10,12 @@ use Illuminate\Database\Eloquent\Collection;
 use Redis;
 use Auth;
 use Cache;
+use Carbon\Carbon;
 use Jenssegers\Mongodb\Eloquent\Model as Eloquent;
 class Blog extends Eloquent
 {
   use SoftDeletes;
-  protected $dates = ['updated_at', 'created_at', 'deleted_at', 'date_created'];
+  protected $dates = ['created_at', 'deleted_at', 'date_created'];
 
   public function __construct(){
     $this->storage = Redis::Connection();
@@ -53,6 +54,49 @@ class Blog extends Eloquent
 
     $objectId = $blog->_id;
     DB::collection('blogs')->where('_id', $objectId)->push('tags', $blogTags);
+  }
+
+  public static function updateArticle(Request $request){
+    $blogTags = [];
+    $tags = $request->tags;
+    $carbon = new Carbon();
+    $filteredTags = explode(',', trim($tags));
+    foreach($filteredTags as $tag){
+      $blogTags[] = strtolower($tag);
+    }
+
+    if($request->hasFile('fileUpload')){
+
+      $fileImage = $request->file('fileUpload');
+      $destination_path = 'images/';
+      $image = str_random(6).'_'.$fileImage->getClientOriginalName();
+      $fileImage->move($destination_path, $image);
+
+      DB::collection('blogs')->where('_id', $request->id)->unset('tags');
+      DB::collection('blogs')->where('_id', $request->id)
+      ->update([
+        'title' => $request->title,
+        'content' => $request->content,
+        'image' => $image,
+      ]);
+
+      DB::collection('blogs')->where('_id', $request->id)->push('tags', $blogTags);
+      $blogs = Blog::where('_id', $request->id)->get();
+      return $blogs;
+
+    }else{
+      DB::collection('blogs')->where('_id', $request->id)->unset('tags');
+      DB::collection('blogs')->where('_id', $request->id)
+      ->update([
+        'title' => $request->title,
+        'content' => $request->content,
+      ]);
+
+      DB::collection('blogs')->where('_id', $request->id)->push('tags', $blogTags);
+      $blogs = Blog::where('_id', $request->id)->get();
+      return $blogs;
+    }
+
   }
 
   public static function fetchAll(){

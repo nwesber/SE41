@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="container">
-
+   @foreach ($blogs as $i => $blog)
   <form action="/updateBlog" method="POST" class="form-horizontal uploader" enctype="multipart/form-data">
   <div class="panel panel-default centerForm clearCreate" style="max-width: 1000px;">
     <div class="panel-body">
@@ -16,7 +16,7 @@
 
 
         {{ csrf_field() }}
-        @foreach ($blogs as $i => $blog)
+        <input type="hidden" name="id" name="id" value="{{ $blog->id }}">
         <div class="form-group">
           <div class="col-md-1">
             <h5><strong>Title: </strong></h5>
@@ -41,7 +41,7 @@
           <div class="col-md-12">
             <div class="col-md-6">
               <h5><strong>Thumbnail: </strong><small><br><i>*Maximum image size: 5mb</i></small></h5>
-              <input id="imgInp" type="file" name="fileUpload" accept="image/*" required="true" />
+              <input id="imgInp" type="file" name="fileUpload" accept="image/*" />
             </div>
             <div class="col-md-6">
               <h5><strong>Current Thumbnail:</strong></h5>

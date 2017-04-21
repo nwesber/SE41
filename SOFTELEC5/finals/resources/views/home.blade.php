@@ -19,7 +19,7 @@
                       <li><a href="{{ url('/topic/'. $t)  }}"><i class="fa fa-tag"></i> {{$t}}</a></li>
                       @break;
                       @endforeach
-                      <li><i class="fa fa-clock-o"></i> {{ \Carbon\Carbon::parse($recent{'created_at'})->diffForHumans() }}</li>
+                      <li><i class="fa fa-clock-o"></i> {{ \Carbon\Carbon::parse($recent{'updated_at'})->diffForHumans() }}</li>
                     </ul>
                     <a href="{{ url('/article/'. $recent->_id)  }}" class="card__title">{{ $recent->title }}</a>
                     <ul class="card__meta card__meta--last">

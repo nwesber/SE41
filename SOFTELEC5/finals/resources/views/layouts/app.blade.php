@@ -12,6 +12,7 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="//cdnjs.cloudflare.com/ajax/libs/summernote/0.8.3/summernote.css" rel="stylesheet">
     <link href="//code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" type="text/css" rel="stylesheet">
+    <link href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.css" type="text/css" rel="stylesheet">
     <link href="{{ asset('css/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet">
     <link href="{{ asset('css/bootstrap-tokenfield.min.css') }}" rel="stylesheet">
     <link href="{{ asset('css/tokenfield-typeahead.min.css') }}" rel="stylesheet">
@@ -141,11 +142,37 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/summernote/0.8.3/summernote.js"></script>
     <script src="{{ asset('js/bootstrap-tagsinput.min.js') }}"></script>
     <script src="{{ asset('js/summernote.js') }}"></script>
     <script src="{{ asset('js/fb.js') }}"></script>
     <script src="{{ asset('js/blog.js') }}"></script>
     <script src="{{ asset('js/pace.js') }}"></script>
+    <script type="text/javascript">
+    $('html').bind('keypress', function(e){
+      if(e.keyCode == 13){ return false; }
+    });
+    </script>
+    <script type="text/javascript">
+      @if(Session::has('notification'))
+        var type = "{{ Session::get('notification.alert-type', 'info') }}";
+        switch(type){
+          case 'info':
+            toastr.info("{{ Session::get('notification.message') }}");
+            break;
+
+          case 'warning':
+            toastr.warning("{{ Session::get('notification.message') }}");
+            break;
+          case 'success':
+            toastr.success("{{ Session::get('notification.message') }}");
+            break;
+          case 'error':
+            toastr.error("{{ Session::get('notification.message') }}");
+            break;
+        }
+      @endif
+    </script>
   </body>
 </html>

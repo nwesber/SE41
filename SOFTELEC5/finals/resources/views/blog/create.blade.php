@@ -55,9 +55,4 @@
     </div>
   </div>
 </div>
-<script type="text/javascript">
-$('html').bind('keypress', function(e){
-  if(e.keyCode == 13){ return false; }
-});
-</script>
 @endsection

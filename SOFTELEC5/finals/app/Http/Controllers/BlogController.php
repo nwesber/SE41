@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Blog;
 use App\Comment;
+use App\Http\Requests;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Eloquent\Collection;
 use Jenssegers\Mongodb\Eloquent\Model as Model;
@@ -14,6 +15,7 @@ use Cache;
 use App\User;
 use Carbon;
 use DateTime;
+use Session;
 class BlogController extends Controller{
 
   public function __construct(){
@@ -38,14 +40,23 @@ class BlogController extends Controller{
 
   public function store(Request $request){
     $blogs = Blog::create($request);
+    $notification  = array('message' => 'Article Successfully Created!', 'alert-type' => 'success');
+    session()->flash('notification', $notification);
     return redirect('/');
   }
 
-  public function show(Request $request, $id){
-    $blogs = Blog::where('_id', $request->id)->get();
+  public function show($id){
+    $blogs = Blog::where('_id', $id)->get();
     $comments = Comment::latest()->get();
     $users = User::all();
     return view('blog.show', compact('blogs', 'users', 'comments'));
+  }
+
+  public function update(Request $request){
+    $blogs = Blog::updateArticle($request);
+    $notification  = array('message' => 'Article Successfully Updated!', 'alert-type' => 'success');
+    session()->flash('notification', $notification);
+    return redirect('/article/'. $request->id);
   }
 
   public function edit($id){
