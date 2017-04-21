@@ -3,7 +3,7 @@
 @section('content')
 <div class="container">
 
-  <form action="/createBlog" method="POST" class="form-horizontal uploader" enctype="multipart/form-data">
+  <form action="/updateBlog" method="POST" class="form-horizontal uploader" enctype="multipart/form-data">
   <div class="panel panel-default centerForm clearCreate" style="max-width: 1000px;">
     <div class="panel-body">
       <h4 style="display: inline-block;"><strong>Edit Article</strong></h4>

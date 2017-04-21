@@ -62,12 +62,9 @@ class BlogController extends Controller{
   public function edit($id){
     if (Auth::check()){
       $blogs = Blog::where('_id', $id)->get();
-
       foreach ($blogs as $blog) {
         $blogTag = implode(",", $blog->tags);
       }
-
-
       return view('blog.edit', compact('blogs', 'blogTag'));
     }else{
       return redirect('/');

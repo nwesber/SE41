@@ -1,0 +1,61 @@
+1.  Define "White Box Testing".
+- White box testing is a software testing technique that focuses on the structural requirements of a project, validating the technical structure of the program.
+
+2.  Define "Black Box Testing".
+- Black Box Testing is a software testing technique that focuses on the functional requirements of a project, validating whether the program meets the functions as expected.
+
+3.  Define "Software Testing?
+- Software testing is an important layer/process in software development that ensures, and evaluates the functional and structural quality of the software product.
+
+4.  What is Risk Based Testing?
+- Risk Based Testing is a testing approach which prioritizes the testing of specific features depending on the risk of failure of such to decrease the residual risk of the whole product.
+
+5.  What is the attitude of a tester?
+- A tester has the belief that developers are humans, therefore, the product is not perfect and broken already, and that his job is to find all of those flaws.
+
+
+(20 points) Black Box Testing:
+
+Test a program that computes the sum of the first value integers as long as this sum is less than maxint. Otherwise an error should be reported. If value is negative, then it takes the absolute value.
+
+Equivalence Classes: (Refer to the powerpoint “Software Testing - S04 - Test Approaches - IA –RLRamos” for the rules, not all rules will have Equivalence Classes):
+
+
+Rule          Valid Equivalence Class       Invalid Equivalence Class
+===========================================================================
+Rule #1       V1 : 2x < maxint
+              V2 : 2x >= maxint
+===========================================================================
+Rule #2       n/a                           n/a
+===========================================================================
+Rule #3       n/a                           n/a
+===========================================================================
+Rule #4       V3 : x is an integer          X1 : x is NOT an integer
+              V4 : x >= 0
+              V5 : x < 0
+===========================================================================
+Rule #5       n/a                           n/a
+
+Test Cases:
+
+Test Case # Test Data             Expected Outcome  Classes Covered
+1           Maxint = 50, x = 10   20                V1, V3, V4
+2           Maxint = 20, x = 20   Error             V2
+3           Maxint = 50, x = -10  20                V3
+4           X = non-int(“abc”)    Error             X1
+
+Essay (30 points)
+
+1.  Differentiate between White Box and Black Box Testing (15 points)
+
+
+• White box testing is a software testing method that focuses on testing the internal structure, logic and other internal components in a program. Black box testing on the other hand focuses on the functionality of the program. Test data on white box testing are derived from the logic behind the program, while black box’s test data are derived from the program’s functional specifications. In terms of the tester’s knowledge, white box testing requires a tester who has a strong technical knowledge and capability to understand each line of the programmer’s code while the tester in black box testing does not need any technical background for he is only concerned with the input, and output of the program, focusing only on the functionality.
+White box testing is mainly applicable to lower levels of testing because of the detailed testing by the testers. Black box testing on the other hand is applicable to higher levels of testing because the functionality is the only concern in this kind of testing.
+
+3.  What is the difference between coders and testers? (10 points)
+
+• Coders are the programmers who build the software through programming; the testers on the other hand are the one who test the coder’s output through testing. Coders also test their programs, but the tester is the one responsible on testing the coder’s job thoroughly.  A coder has a natural thinking that his work is perfect and is efficient and uses his creativity to build, the tester on the other hand uses his creativity to break the code, and believes that the program is already broken and that his job is to trace them all and throw back all the bugs or errors to the programmer.
+
+5.  What is the difference between Validation and Verification? (15 points)
+
+• Validation checks if the development team is creating the right product based from the client’s specifications and meet the user’s needs. Verification on the other hand checks if the team is building the product right, or if the software’s functionality meets the requirements of the product and functions as expected. (A simple analogy: if a team is asked to create a shooting game, validation checks if what they are doing is indeed a shooting game, not a car racing game or what not. Verification on the other hand checks if the shooting game is a game which has characters shoot one another, depending on the client’s specifications.)

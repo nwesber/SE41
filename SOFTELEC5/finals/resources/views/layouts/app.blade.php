@@ -94,10 +94,10 @@
               <div class="row">
                 <div class="col-xs-6">
                   <div class="well">
-                    <form id="loginForm" method="POST" action="{{ route('login') }}" novalidate="novalidate">
+                    <form id="loginForm" method="POST" action="{{ route('login') }}"  >
                       <div class="form-group">
-                        <label for="username" class="control-label">Username</label>
-                        <input type="text" class="form-control" id="email" name="email" value="" required="" title="Please enter you username" placeholder="example@gmail.com">
+                        <label for="username" class="control-label">Email</label>
+                        <input type="text" class="form-control" id="email" name="email" value="" required="true" title="Please enter you username" placeholder="example@gmail.com">
                         <span class="help-block"></span>
                       </div>
                       <div class="form-group">
