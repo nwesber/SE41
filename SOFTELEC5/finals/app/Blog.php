@@ -114,4 +114,9 @@ class Blog extends Eloquent
     return $string;
   }
 
+  public static function deleteArticle($id){
+    $blog = Blog::find($id);
+    $blog->delete();
+  }
+
 }

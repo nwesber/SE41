@@ -68,6 +68,12 @@ class BlogController extends Controller{
     else{ return redirect('/'); }
   }
 
+  public function destroy($id){
+    $blog = Blog::deleteArticle($id);
+    session()->flash('notification', $notification);
+    return redirect('/');
+  }
+
   public function filterTags($tag){
     dd($tag);
   }
