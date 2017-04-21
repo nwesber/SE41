@@ -70,6 +70,7 @@ class BlogController extends Controller{
 
   public function destroy($id){
     $blog = Blog::deleteArticle($id);
+    $notification  = array('message' => 'Article Successfully Deleted!', 'alert-type' => 'danger');
     session()->flash('notification', $notification);
     return redirect('/');
   }
