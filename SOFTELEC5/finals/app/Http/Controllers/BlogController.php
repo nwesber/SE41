@@ -9,6 +9,7 @@ use App\Http\Requests;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Eloquent\Collection;
 use Jenssegers\Mongodb\Eloquent\Model as Model;
+use Jenssegers\Mongodb\Eloquent\SoftDeletes;
 use Illuminate\Support\Facades\Auth;
 use Redis;
 use Cache;
@@ -17,6 +18,9 @@ use Carbon;
 use DateTime;
 use Session;
 class BlogController extends Controller{
+
+  use SoftDeletes;
+  protected $dates = ['deleted_at'];
 
   public function __construct(){
     $this->storage = Redis::Connection();
@@ -69,8 +73,8 @@ class BlogController extends Controller{
   }
 
   public function destroy($id){
-    $blog = Blog::deleteArticle($id);
-    $notification  = array('message' => 'Article Successfully Deleted!', 'alert-type' => 'danger');
+    $deletedRows = Blog::deleteArticle($id);
+    $notification  = array('message' => 'Article Successfully Deleted!', 'alert-type' => 'success');
     session()->flash('notification', $notification);
     return redirect('/');
   }

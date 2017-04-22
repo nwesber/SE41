@@ -18,7 +18,7 @@
                              style=" background-color: #02b875 !important; color: white;">
                              Edit Article
                           </a>
-                          <a href="#" class="btn btn-danger"
+                          <a href="{{ url('/deleteBlog/'. $blog->_id)  }}" class="btn btn-danger"
                              style=" background-color: #E54B4B !important; color: white;">
                              Delete Article
                           </a>

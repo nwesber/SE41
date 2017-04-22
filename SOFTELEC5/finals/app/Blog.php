@@ -15,7 +15,7 @@ use Jenssegers\Mongodb\Eloquent\Model as Eloquent;
 class Blog extends Eloquent
 {
   use SoftDeletes;
-  protected $dates = ['created_at', 'deleted_at', 'date_created'];
+  protected $dates = ['deleted_at'];
 
   public function __construct(){
     $this->storage = Redis::Connection();
@@ -115,8 +115,9 @@ class Blog extends Eloquent
   }
 
   public static function deleteArticle($id){
-    $blog = Blog::find($id);
-    $blog->delete();
+    $delete = Blog::where('_id', $id)->delete();
+    /*$delete = Blog::destroy($id);*/
+    return $delete;
   }
 
 }

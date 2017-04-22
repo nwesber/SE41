@@ -14,6 +14,13 @@
 - A tester has the belief that developers are humans, therefore, the product is not perfect and broken already, and that his job is to find all of those flaws.
 
 
+• TestCase_01:  i=5, b=6
+• TestCase_02:  i=3, b=3
+• TestCase_03:  i=5, b=3
+• TestCase_04:  i=3, b=6
+• TestCase_05:  i=0, b=0
+
+
 (20 points) Black Box Testing:
 
 Test a program that computes the sum of the first value integers as long as this sum is less than maxint. Otherwise an error should be reported. If value is negative, then it takes the absolute value.
