@@ -102,7 +102,11 @@
                                 <div class="comment-footer">
                                   <div class="comment-info">
                                     <span class="comment-author">
-                                      <a href="{{ url('/profile/'. $user->_id)  }}">{{ $user->name }}</a>
+                                      @if(Auth::guest())
+                                        <a href="#" data-toggle="modal" data-target="#myModal"> {{ $user->name }} </a>
+                                      @else
+                                        <a href="{{ url('/profile/'. $user->_id)  }}">{{ $user->name }}</a>
+                                      @endif
                                     </span>
                                     <span class="comment-date">{{  \Carbon\Carbon::parse( $comment->created_at )->diffForHumans() }}</span>
 
