@@ -20,6 +20,8 @@
     <link href="{{ asset('css/bootstrap-tagsinput.css') }}" rel="stylesheet">
     <link href="{{ asset('css/blog/comment.css') }}" rel="stylesheet">
     <link href="{{ asset('css/pace.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/search.css') }}" rel="stylesheet">
+
 
     <script> window.Laravel = {!! json_encode([ 'csrfToken' => csrf_token(), ]) !!}; </script>
   </head>
@@ -39,6 +41,13 @@
           </div>
 
           <ul class="nav navbar-nav navbar-right">
+            <li>
+              <form class="searchbox">
+                <input type="search" placeholder="Search......" name="search" class="searchbox-input" required>
+                <input type="submit" class="searchbox-submit" value="GO">
+                <span class="searchbox-icon"></span>
+              </form>
+            </li>
             @if (Auth::guest())
                <li><a href="#" class="btn btn-default btn-xs navbtn"
                data-toggle="modal" data-target="#myModal"><strong>Get Started</strong></a></li>
@@ -173,6 +182,37 @@
             break;
         }
       @endif
+    </script>
+    <script type="text/javascript">
+      $(function() {
+  var submitIcon = $('.searchbox-icon');
+  var inputBox = $('.searchbox-input');
+  var searchBox = $('.searchbox');
+  var isOpen = false;
+  submitIcon.click(function() {
+    if (isOpen == false) {
+      searchBox.addClass('searchbox-open');
+      inputBox.focus();
+      isOpen = true;
+    } else {
+      searchBox.removeClass('searchbox-open');
+      inputBox.focusout();
+      isOpen = false;
+    }
+  });
+  submitIcon.mouseup(function() {
+    return false;
+  });
+  searchBox.mouseup(function() {
+    return false;
+  });
+  $(document).mouseup(function() {
+    if (isOpen == true) {
+      $('.searchbox-icon').css('display', 'block');
+      submitIcon.click();
+    }
+  });
+});
     </script>
   </body>
 </html>

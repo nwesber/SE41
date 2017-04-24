@@ -1,0 +1,79 @@
+.searchbox .searchbox-icon, .searchbox .searchbox-submit {
+  width: 45px;
+  height: 35px;
+  display: block;
+  position: absolute;
+  top: 0;
+  font-size: 18px;
+  left: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  text-align: center;
+  cursor: pointer;
+  color: #d9d9d9;
+}
+
+.searchbox {
+  position: relative;
+  min-width: 44px;
+  width: 0;
+  height: 35px;
+  margin-top: 5.5px;
+  float: right;
+  overflow: hidden;
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
+}
+.searchbox .searchbox-input {
+  top: 0;
+  right: 0;
+  border: 0;
+  outline: 0;
+  width: 100%;
+  height: 35px;
+  margin: 0;
+  padding: 0 20px 0 50px;
+  font-size: 16px;
+  color: black;
+  background-color: transparent;
+}
+.searchbox .searchbox-input::-moz-placeholder {
+  color: #d9d9d9;
+}
+.searchbox .searchbox-input:-moz-placeholder {
+  color: #d9d9d9;
+}
+.searchbox .searchbox-input::-ms-input-placeholder {
+  color: #d9d9d9;
+}
+.searchbox .searchbox-input::-webkit-input-placeholder {
+  color: #d9d9d9;
+}
+.searchbox .searchbox-icon:before {
+  display: block;
+  float: left;
+  max-width: 24px;
+  max-height: 24px;
+  margin-top: 5px;
+  margin-left: 10px;
+  content: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAACBklEQVRIS7WUzVEbQRCF+22pdAUiMDpoe3UyjsByBCYDmwgsR2CIwBABKAKLCIwzgJNmVgcpBLiqStOu3ppVrYZhdilE33Zner7+ed2giJVl+V1EvhLRmIgO9YqI3AG4c85NR6PRKuYX+4fmz8ViMd5sNtcAjhMPPBLRJTNfdIFsAT7q68DpQUT0QQLwOTi7YeazNkgF0Midc38bl6fOufOwFMaYCYBzIjrwZbsqimKSglQAY8wKwAcf6Vme5zcvOZVleaL9qCFZln0ZDof6HTUEpbll5tO2tIOMkz6w1s6ISBVDzrlBV4VYa++J6CMRPTLz0YsZNMrzwMwnbdHX59Za7cUv/U6VSTMQ37B/RVGo7jvZawAqwwMReR+AMUYntNJ4v98/GgwGle7brNm7lB+8tn/7By+YWWubtPl8fpxl2bJLabFcLg/X67Xulmp4AHzK81wVEjV/X4eyEgSA5NzUg6YTWmehJZow8zQk+Mj/1I936dt2F1lrdXq/1Y+KyCrLslm9i0RkDCCmshmAVZ7nP2Mp72zTpvRSTdDIAega10GrLbr8dgB605dBG60ro+pLw24BzHRXGWMuAfwIzp9BngGaDrrYfKTU6/XumxK21moA2o/QdiBJQJtcEyXdQt4E0ABCcYQ9eTMgBRGRq70AEpCnvQEikCcAk70CGpBTHUpdOf8BdIUMqeoRfLEAAAAASUVORK5CYII=");
+}
+.searchbox .searchbox-icon:after {
+  content: '';
+  width: 1px;
+  height: 29px;
+  margin-top: 3px;
+  background-color: rgba(216, 216, 216, 0.5);
+  display: block;
+  float: right;
+}
+.searchbox .searchbox-submit {
+  opacity: 0;
+}
+.searchbox.searchbox-open {
+  background-color: rgba(245, 245, 245, 0.3);
+  border-radius: 3px;
+  width: 280px;
+}

@@ -19,9 +19,6 @@ use DateTime;
 use Session;
 class BlogController extends Controller{
 
-  use SoftDeletes;
-  protected $dates = ['deleted_at'];
-
   public function __construct(){
     $this->storage = Redis::Connection();
   }
@@ -34,6 +31,10 @@ class BlogController extends Controller{
     $food = Blog::latest()->where('tags', 'food')->take(6)->get();
     $games = Blog::latest()->where('tags', 'games')->take(6)->get();
     $movies = Blog::latest()->where('tags', 'movies')->take(6)->get();
+
+    //$result = Blog::where('tags', 'regex', "/". $keyword ."/i" )->get();
+
+
     return view('home', [ 'movies' => $movies, 'games' => $games, 'food' => $food, 'travel' => $travel, 'comics' => $comics, 'latest' => $latest, 'users' => $users ]);
   }
 
