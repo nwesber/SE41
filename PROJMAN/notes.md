@@ -301,10 +301,19 @@ Project Scheduling and Cost (Excel)
       * Merge and Burst
       * Activity on Node
       * Activity on Arrow
-        * Always have a start node
+        * Always have a start node and an end node
         
-      
-      
+      * Determining the Project Schedule
+        * Earliest Start (ES) - earliest time at which an activity can start, assuming all predeccessors have been completed
+        * Earliest Finish (EF) - earliest time at which an activity can be finished
+        * Latest Start (LS) - latest time at which an activity can start so as to not delay the completion time of the entire project
+        * Latest Finish (LF) - latest time by which an activity has to be finished as to not delay the completion time of the entire project
+        * Total Slack = LF - EF
+        
+        ES | EF
+        LS | LE
+          
+        
  # Compare Project Timeline against tuesday
   * Kung nasunod scheduling
     
