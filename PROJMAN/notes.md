@@ -291,10 +291,21 @@ Project Scheduling and Cost (Excel)
       * Develop relationships among the activities - decide which activities must precede and which must follow others 
       * Draw the network connecting all of the activities
       * Assign time and/or cost estimates to each activity
-      * ###### compute the longest time path through the network - this is called the critical path
+      * compute the longest time path through the network - this is called the critical path
         * Slack Time if high hindi part ng critical path
         * if value = 0 it is already considered the longest time
-        * Slack time = 0 is considered critical path
-    
+        * Slack time = 0 is considered critical path.
+      * Baseline = actual meets target
+      * Costing
+        * Material Costing and Man Power all is related to cost.
+      * Merge and Burst
+      * Activity on Node
+      * Activity on Arrow
+        * Always have a start node
+        
+      
+      
+ # Compare Project Timeline against tuesday
+  * Kung nasunod scheduling
     
   
