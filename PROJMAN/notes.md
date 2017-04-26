@@ -278,13 +278,13 @@ Project Scheduling and Cost (Excel)
   * Project Management Techniques
    * Gantt Chart
    * Critical Path Method (CPM)
-    * Network Technique
-    * DuPONT
-    * Consider precedence relationship and interdependencies
+     * Network Technique
+     * DuPONT
+     * Consider precedence relationship and interdependencies
    * Program Evaluation and Review Technique (PERT)
-    * Network Technique
-    * Booz, Allen, Hamilton with US Navy for Polaris Missile
-    * Consider precedence relationship and interdependencies
+     * Network Technique
+     * Booz, Allen, Hamilton with US Navy for Polaris Missile
+     * Consider precedence relationship and interdependencies
   
    * 6 steps PERT and CPM
     * Define the project and prepare the wbs
