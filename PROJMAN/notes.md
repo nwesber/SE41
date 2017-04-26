@@ -294,6 +294,7 @@ Project Scheduling and Cost (Excel)
     * ###### compute the longest time path through the network - this is called the critical path
      * Slack Time if high hindi part ng critical path
      * if value = 0 it is already considered the longest time
-   
+     * Slack time = 0 is considered critical path
+    
     
   
