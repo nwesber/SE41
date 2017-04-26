@@ -250,11 +250,10 @@ Project Scheduling and Cost (Excel)
 # Week 6 (Make-up Class)
   ##### PERT and CPM
   * Word Breakdown Structure
-  Level
   1. Project
-  2.  Major Tasks in the Project
-  3.    Subtasks in the major tasks
-  4.      Activities (or work packages) to be completed
+  2. Major Tasks in the Project
+  3. Subtasks in the major tasks
+  4. Activities (or work packages) to be completed
   
   
   * Project Scheduling
