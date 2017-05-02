@@ -310,10 +310,10 @@ Project Scheduling and Cost (Excel)
         * Latest Finish (LF) - latest time by which an activity has to be finished as to not delay the completion time of the entire project
         * Total Slack = LF - EF
         
-        ES | EF
-        LS | LE
-          
-        
+        | ES  | EF |
+        | --- |:--:|
+        | LS  | LE |
+
  # Compare Project Timeline against tuesday
   * Kung nasunod scheduling
     
