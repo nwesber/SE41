@@ -247,5 +247,74 @@ Project Scheduling and Cost (Excel)
   * Coping Skills ( Flexible, creative, patient, persistent )
   * Technology Skills ( Experience, project knowledge )
 
+# Week 6 (Make-up Class)
+  ##### PERT and CPM
+  * Word Breakdown Structure
+    1. Project
+    2. Major Tasks in the Project
+    3. Subtasks in the major tasks
+    4. Activities (or work packages) to be completed
+  
+  
+  * Project Scheduling
+    * Identifying precedence and relationship
+    * Sequencing activities
+    * Determining activity time and costs
+    * Estimating material & worker requirements
+    * Determining critical activities
+  
+  * Purposes of Project Scheduling
+    * Shows relationship of each activity to others and to the whole project
+    * Identifies the precedene relationships among activities
+    * Encourages the setting of realistic time and cost estimates for each activity
+    * Helps makes better use of people, money, and material resources by identifying critical bottlenecks in the project
+  
+  * Scheduling Techniques
+    * Ensure that all activities are planned for
+    * Their order of performance is accounted for
+    * The activity time estimates are recorded
+    * The overall project time is developed
+  
+  * Project Management Techniques
+   * Gantt Chart
+   * Critical Path Method (CPM)
+     * Network Technique
+     * DuPONT
+     * Consider precedence relationship and interdependencies
+   * Program Evaluation and Review Technique (PERT)
+     * Network Technique
+     * Booz, Allen, Hamilton with US Navy for Polaris Missile
+     * Consider precedence relationship and interdependencies
+  
+   * 6 steps PERT and CPM
+      * Define the project and prepare the wbs
+      * Develop relationships among the activities - decide which activities must precede and which must follow others 
+      * Draw the network connecting all of the activities
+      * Assign time and/or cost estimates to each activity
+      * compute the longest time path through the network - this is called the critical path
+        * Slack Time if high hindi part ng critical path
+        * if value = 0 it is already considered the longest time
+        * Slack time = 0 is considered critical path.
+      * Baseline = actual meets target
+      * Costing
+        * Material Costing and Man Power all is related to cost.
+      * Merge and Burst
+      * Activity on Node
+      * Activity on Arrow
+        * Always have a start node and an end node
+        
+      * Determining the Project Schedule
+        * Earliest Start (ES) - earliest time at which an activity can start, assuming all predeccessors have been completed
+        * Earliest Finish (EF) - earliest time at which an activity can be finished
+        * Latest Start (LS) - latest time at which an activity can start so as to not delay the completion time of the entire project
+        * Latest Finish (LF) - latest time by which an activity has to be finished as to not delay the completion time of the entire project
+        * Total Slack = LF - EF
+        
+        | ES  | EF |
+        | --- |:--:|
+        | LS  | LE |
 
-
+ # Compare Project Timeline against tuesday
+  * Kung nasunod scheduling
+    
+  
