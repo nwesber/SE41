@@ -79,12 +79,16 @@ class BlogController extends Controller{
 
   public function search(Request $request){
     $search = strtolower($request->search);
+    return redirect('/search/'. $search);
+  }
+
+  public function searchBlog($search){
+    $param = $search;
+    $users = User::all();
     $resultBlog = Blog::where('title', 'regex', "/". $search ."/i" )->get();
     $resultUser = User::where('name', 'regex', "/". $search ."/i" )->get();
     $resultTags = Blog::where('tags', 'regex', "/". $search ."/i" )->get();
-
-    return view('blog.search', compact('resultBlog', 'resultUser', 'resultTags'));
-
+    return view('blog.search', compact('resultBlog', 'resultUser', 'resultTags', 'param', 'users'));
   }
 
   public function filterTags($tag){

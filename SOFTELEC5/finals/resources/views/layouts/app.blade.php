@@ -19,6 +19,7 @@
     <link href="{{ asset('css/blog/blogCard.css') }}" rel="stylesheet">
     <link href="{{ asset('css/bootstrap-tagsinput.css') }}" rel="stylesheet">
     <link href="{{ asset('css/blog/comment.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/blog/profile.css') }}" rel="stylesheet">
     <link href="{{ asset('css/pace.css') }}" rel="stylesheet">
     <link href="{{ asset('css/search.css') }}" rel="stylesheet">
 
@@ -26,21 +27,6 @@
       html {
         overflow: scroll;
         overflow-x: hidden;
-      }
-
-      .truncate{
-        position:relative;
-    height:18px;
-    width:140px;
-    margin:0 5px 0 5px; padding:0;
-    font:bold 15px/18px Arial;
-    text-align:center;
-    text-decoration:none;
-    overflow:hidden;
-    text-overflow:ellipsis;
-    white-space:nowrap;
-    display:inline-block;
-    border:solid black 1px;
       }
     </style>
 
@@ -104,7 +90,7 @@
             </ul>
             <form class="searchbox" method="POST" action="/searchBlog">
               {{ csrf_field() }}
-              <input type="search" placeholder="Search......" name="search" class="searchbox-input" style="width: 100%;">
+              <input type="search" placeholder="Search Large" name="search" class="searchbox-input" style="width: 100%;">
               <input type="submit" class="searchbox-submit" value="GO">
               <span class="searchbox-icon"></span>
             </form>
@@ -178,11 +164,7 @@
     <script src="{{ asset('js/fb.js') }}"></script>
     <script src="{{ asset('js/blog.js') }}"></script>
     <script src="{{ asset('js/pace.js') }}"></script>
-    <!-- <script type="text/javascript">
-    $('html').bind('keypress', function(e){
-      if(e.keyCode == 13){ return false; }
-    });
-    </script> -->
+
     <script type="text/javascript">
       @if(Session::has('notification'))
         var type = "{{ Session::get('notification.alert-type', 'info') }}";
@@ -232,6 +214,12 @@
             submitIcon.click();
           }
         });
+      });
+    </script>
+    <script type="text/javascript">
+      $('#readmore').click(function(){
+        $('#showBlog').submit();
+        return false;
       });
     </script>
   </body>

@@ -115,10 +115,6 @@ class Blog extends Eloquent
     return $string;
   }
 
-  public static function getUserBlogs($id){
-
-  }
-
   public static function deleteArticle($id){
     $delete = Blog::where('_id', $id)->delete();
     /*$delete = Blog::destroy($id);*/

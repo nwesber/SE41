@@ -32,20 +32,20 @@
                   </figure>
                 </div>
                 <div class="col-sm-6 col-md-8">
-
-                    <span class="label label-default pull-right">
-                      <i class="fa fa-comments" aria-hidden="true"></i>&nbsp;&nbsp;{{ count($blog->comments)}}
-                    </span>
-
+                  <span class="label label-default pull-right">
+                    <i class="fa fa-comments" aria-hidden="true"></i>&nbsp;&nbsp;{{ count($blog->comments) }}
+                  </span>
                   <h4><strong>{{  $blog->title }}</strong></h4>
                   <h4>{{  $blog->summary }}</h4>
                   <section>
                     @foreach($blog->tags as $tag => $t)
-                    <a href="{{ url('/topic/'. $t)  }}"><i class="fa fa-tag" aria-hidden="true"></i>&nbsp;&nbsp;{{$t}}&nbsp;&nbsp;</a>
-                    @break;
+                      <a class="tagLinks" href="{{ url('/topic/'. $t)  }}">
+                        <i class="fa fa-tag" aria-hidden="true"></i>&nbsp;&nbsp;{{$t}}&nbsp;&nbsp;
+                      </a>
+                      @break
                     @endforeach
                     <i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;&nbsp; {{ \Carbon\Carbon::parse($blog->created_at)->format('M-d-Y') }}
-                    <a href="{{ url('/article/'. $blog->_id)  }}" class="btn btn-default btn-sm pull-right">Read More ... </a>
+                    <a href="{{ url('/article/'. $blog->_id)  }}" class="btn btn-default btn-sm pull-right readMore">Read More ... </a>
                   </section>
                 </div>
               </div>
