@@ -165,6 +165,7 @@ return [
         Jenssegers\Mongodb\MongodbServiceProvider::class,
         Jenssegers\Mongodb\Auth\PasswordResetServiceProvider::class,
         Jenssegers\Mongodb\Session\SessionServiceProvider::class,
+        Cviebrock\EloquentSluggable\ServiceProvider::class,
         /*
          * Package Service Providers...
          */

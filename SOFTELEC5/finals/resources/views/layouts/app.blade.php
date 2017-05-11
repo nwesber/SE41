@@ -22,6 +22,27 @@
     <link href="{{ asset('css/pace.css') }}" rel="stylesheet">
     <link href="{{ asset('css/search.css') }}" rel="stylesheet">
 
+    <style type="text/css">
+      html {
+        overflow: scroll;
+        overflow-x: hidden;
+      }
+
+      .truncate{
+        position:relative;
+    height:18px;
+    width:140px;
+    margin:0 5px 0 5px; padding:0;
+    font:bold 15px/18px Arial;
+    text-align:center;
+    text-decoration:none;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    display:inline-block;
+    border:solid black 1px;
+      }
+    </style>
 
     <script> window.Laravel = {!! json_encode([ 'csrfToken' => csrf_token(), ]) !!}; </script>
   </head>

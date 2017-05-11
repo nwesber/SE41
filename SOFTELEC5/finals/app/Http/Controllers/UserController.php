@@ -17,7 +17,7 @@ use DateTime;
 class UserController extends Controller{
 
   public function myProfile($id){
-    return view('profile.index');
+    $blogs = Blog::where('user_id', $id)->get();
+    return view('profile.index', compact('blogs'));
   }
-
 }

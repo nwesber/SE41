@@ -32,8 +32,6 @@ class BlogController extends Controller{
     $games = Blog::latest()->where('tags', 'games')->take(6)->get();
     $movies = Blog::latest()->where('tags', 'movies')->take(6)->get();
 
-    //$result = Blog::where('tags', 'regex', "/". $keyword ."/i" )->get();
-
     return view('home', [ 'movies' => $movies, 'games' => $games, 'food' => $food, 'travel' => $travel, 'comics' => $comics, 'latest' => $latest, 'users' => $users ]);
   }
 

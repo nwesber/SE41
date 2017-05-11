@@ -17,6 +17,7 @@
 
         {{ csrf_field() }}
         <input type="hidden" name="id" name="id" value="{{ $blog->id }}">
+        <input type="hidden" name="meta_title" name="meta_title" value="{{ $blog->meta_title }}">
         <div class="form-group">
           <div class="col-md-1">
             <h5><strong>Title: </strong></h5>

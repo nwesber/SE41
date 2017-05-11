@@ -47,6 +47,7 @@ class Blog extends Eloquent
     $blog->title = $request->title;
     $blog->meta_title = $meta_title;
     $blog->content = $request->content;
+    $blog->summary = $request->summary;
     $blog->image = $image;
     $blog->user_id = $id;
     $blog->deleted_at = null;
@@ -112,6 +113,10 @@ class Blog extends Eloquent
     $string = preg_replace("/[\s-]+/", " ", $string);
     $string = preg_replace("/[\s_]/", "-", $string);
     return $string;
+  }
+
+  public static function getUserBlogs($id){
+
   }
 
   public static function deleteArticle($id){

@@ -20,7 +20,7 @@
         "require-dev": {
             "phpunit/phpunit": "4.*"
         },
-        "time": "2015-11-06 14:35:42",
+        "time": "2015-11-06T14:35:42+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -86,7 +86,7 @@
         "require": {
             "php": ">=5.3.0"
         },
-        "time": "2017-03-29 16:04:15",
+        "time": "2017-03-29T16:04:15+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -137,7 +137,7 @@
             "phpunit/phpunit": "3.7.*",
             "squizlabs/php_codesniffer": "1.*"
         },
-        "time": "2014-04-08 15:00:19",
+        "time": "2014-04-08T15:00:19+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -178,7 +178,7 @@
         "suggest": {
             "ext-mbstring": "For best performance"
         },
-        "time": "2016-11-14 01:06:16",
+        "time": "2016-11-14T01:06:16+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -246,7 +246,7 @@
         "suggest": {
             "ext-symfony_debug": ""
         },
-        "time": "2017-03-12 16:07:05",
+        "time": "2017-03-12T16:07:05+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -304,7 +304,7 @@
         "require": {
             "php": ">=5.3.0"
         },
-        "time": "2016-10-10 12:19:37",
+        "time": "2016-10-10T12:19:37+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -361,7 +361,7 @@
             "symfony/class-loader": "~2.8|~3.0",
             "symfony/http-kernel": "~2.8|~3.0"
         },
-        "time": "2017-03-28 21:38:24",
+        "time": "2017-03-28T21:38:24+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -426,7 +426,7 @@
             "symfony/filesystem": "",
             "symfony/process": ""
         },
-        "time": "2017-03-06 19:30:27",
+        "time": "2017-03-06T19:30:27+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -481,7 +481,7 @@
         "require-dev": {
             "phpunit/phpunit": "~4.0|~5.0"
         },
-        "time": "2017-03-05 18:23:57",
+        "time": "2017-03-05T18:23:57+00:00",
         "bin": [
             "bin/php-parse"
         ],
@@ -538,7 +538,7 @@
             "phpunit/phpunit": "~4.0",
             "squizlabs/php_codesniffer": "~1.5"
         },
-        "time": "2015-04-20 18:58:01",
+        "time": "2015-04-20T18:58:01+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -579,7 +579,7 @@
         "require-dev": {
             "phpunit/phpunit": "@stable"
         },
-        "time": "2014-10-24 07:27:01",
+        "time": "2014-10-24T07:27:01+00:00",
         "type": "project",
         "installation-source": "dist",
         "autoload": {
@@ -629,7 +629,7 @@
             "ext-readline": "Enables support for arrow-key history navigation, and showing and manipulating command history.",
             "hoa/console": "A pure PHP readline implementation. You'll want this if your PHP install doesn't already support readline or libedit."
         },
-        "time": "2017-03-19 21:40:44",
+        "time": "2017-03-19T21:40:44+00:00",
         "bin": [
             "bin/psysh"
         ],
@@ -689,7 +689,7 @@
         "require-dev": {
             "phpunit/phpunit": "^4.8 || ^5.0"
         },
-        "time": "2016-09-01 10:05:43",
+        "time": "2016-09-01T10:05:43+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -738,7 +738,7 @@
         "require": {
             "php": ">=5.5.9"
         },
-        "time": "2017-02-21 09:12:04",
+        "time": "2017-02-21T09:12:04+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -797,7 +797,7 @@
         "require-dev": {
             "phpunit/phpunit": "~4.8|5.1.*"
         },
-        "time": "2016-09-20 12:50:39",
+        "time": "2016-09-20T12:50:39+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -862,7 +862,7 @@
             "symfony/http-foundation": "For using a Symfony Request object",
             "symfony/yaml": "For using the YAML loader"
         },
-        "time": "2017-03-02 15:58:09",
+        "time": "2017-03-02T15:58:09+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -919,7 +919,7 @@
         "require": {
             "php": ">=5.5.9"
         },
-        "time": "2017-03-27 18:07:02",
+        "time": "2017-03-27T18:07:02+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -974,7 +974,7 @@
         "require-dev": {
             "symfony/expression-language": "~2.8|~3.0"
         },
-        "time": "2017-03-04 12:23:14",
+        "time": "2017-03-04T12:23:14+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -1036,7 +1036,7 @@
             "symfony/dependency-injection": "",
             "symfony/http-kernel": ""
         },
-        "time": "2017-02-21 09:12:04",
+        "time": "2017-02-21T09:12:04+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -1120,7 +1120,7 @@
             "symfony/finder": "",
             "symfony/var-dumper": ""
         },
-        "time": "2017-03-10 18:35:31",
+        "time": "2017-03-10T18:35:31+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -1171,7 +1171,7 @@
         "require": {
             "php": ">=5.5.9"
         },
-        "time": "2017-03-20 09:32:19",
+        "time": "2017-03-20T09:32:19+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -1226,7 +1226,7 @@
             "mockery/mockery": "~0.9.1",
             "symfony/phpunit-bridge": "~3.2"
         },
-        "time": "2017-02-13 07:52:53",
+        "time": "2017-02-13T07:52:53+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -1284,7 +1284,7 @@
         "suggest": {
             "ext-libsodium": "Provides a modern crypto API that can be used to generate random bytes."
         },
-        "time": "2017-03-13 16:27:32",
+        "time": "2017-03-13T16:27:32+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -1354,7 +1354,7 @@
             "ramsey/uuid-console": "A console application for generating UUIDs with ramsey/uuid",
             "ramsey/uuid-doctrine": "Allows the use of Ramsey\\Uuid\\Uuid as Doctrine field type."
         },
-        "time": "2017-03-26 20:37:53",
+        "time": "2017-03-26T20:37:53+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -1427,7 +1427,7 @@
             "symfony/config": "",
             "symfony/yaml": ""
         },
-        "time": "2017-03-04 12:23:14",
+        "time": "2017-03-04T12:23:14+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -1483,7 +1483,7 @@
             "friendsofphp/php-cs-fixer": "~2",
             "phpunit/phpunit": "~4.0 || ~5.0"
         },
-        "time": "2017-01-16 07:55:07",
+        "time": "2017-01-16T07:55:07+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -1536,7 +1536,7 @@
         "require-dev": {
             "phpunit/phpunit": "~4.0|~5.0"
         },
-        "time": "2017-01-23 04:29:33",
+        "time": "2017-01-23T04:29:33+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -1609,7 +1609,7 @@
             "ruflin/elastica": "Allow sending log messages to an Elastic Search server",
             "sentry/sentry": "Allow sending log messages to a Sentry server"
         },
-        "time": "2017-03-13 07:08:03",
+        "time": "2017-03-13T07:08:03+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -1682,7 +1682,7 @@
             "league/flysystem-webdav": "Allows you to use WebDAV storage",
             "league/flysystem-ziparchive": "Allows you to use ZipArchive adapter"
         },
-        "time": "2017-03-22 15:43:14",
+        "time": "2017-03-22T15:43:14+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -1823,7 +1823,7 @@
             "symfony/dom-crawler": "Required to use most of the crawler integration testing tools (~3.2).",
             "symfony/psr-http-message-bridge": "Required to psr7 bridging features (0.2.*)."
         },
-        "time": "2017-04-03 13:07:39",
+        "time": "2017-04-03T13:07:39+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -1886,7 +1886,7 @@
         "suggest": {
             "illuminate/database": "The Illuminate Database package (~5.1)."
         },
-        "time": "2016-12-30 18:13:17",
+        "time": "2016-12-30T18:13:17+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -1940,7 +1940,7 @@
             "phpunit/phpunit": "~4.0",
             "squizlabs/php_codesniffer": "~1.5"
         },
-        "time": "2016-04-29 12:21:54",
+        "time": "2016-04-29T12:21:54+00:00",
         "type": "library",
         "extra": {
             "branch-alias": []
@@ -1994,7 +1994,7 @@
             "phpunit/php-file-iterator": "1.3.3",
             "satooshi/php-coveralls": "dev-master"
         },
-        "time": "2015-05-11 14:41:42",
+        "time": "2015-05-11T14:41:42+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -2020,12 +2020,12 @@
         "version_normalized": "0.9.9.0",
         "source": {
             "type": "git",
-            "url": "https://github.com/padraic/mockery.git",
+            "url": "https://github.com/mockery/mockery.git",
             "reference": "6fdb61243844dc924071d3404bb23994ea0b6856"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/padraic/mockery/zipball/6fdb61243844dc924071d3404bb23994ea0b6856",
+            "url": "https://api.github.com/repos/mockery/mockery/zipball/6fdb61243844dc924071d3404bb23994ea0b6856",
             "reference": "6fdb61243844dc924071d3404bb23994ea0b6856",
             "shasum": ""
         },
@@ -2037,7 +2037,7 @@
         "require-dev": {
             "phpunit/phpunit": "~4.0"
         },
-        "time": "2017-02-28 12:52:32",
+        "time": "2017-02-28T12:52:32+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -2103,7 +2103,7 @@
             "phpunit/phpunit": "^4.6",
             "sebastian/version": "^1.0.1"
         },
-        "time": "2016-11-23 20:04:58",
+        "time": "2016-11-23T20:04:58+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -2154,7 +2154,7 @@
         "require-dev": {
             "phpunit/phpunit": "^4.6"
         },
-        "time": "2015-12-27 11:43:31",
+        "time": "2015-12-27T11:43:31+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -2212,7 +2212,7 @@
             "mockery/mockery": "^0.9.4",
             "phpunit/phpunit": "^5.2||^4.8.24"
         },
-        "time": "2016-11-25 06:54:22",
+        "time": "2016-11-25T06:54:22+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -2263,7 +2263,7 @@
             "mockery/mockery": "^0.9.4",
             "phpunit/phpunit": "^4.4"
         },
-        "time": "2016-09-30 07:12:33",
+        "time": "2016-09-30T07:12:33+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -2307,7 +2307,7 @@
         "require-dev": {
             "phpunit/phpunit": "~4.2"
         },
-        "time": "2017-02-27 10:12:30",
+        "time": "2017-02-27T10:12:30+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -2360,7 +2360,7 @@
         "suggest": {
             "symfony/console": "For validating YAML files using the lint command"
         },
-        "time": "2017-03-20 09:45:15",
+        "time": "2017-03-20T09:45:15+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -2411,7 +2411,7 @@
         "require": {
             "php": ">=5.6"
         },
-        "time": "2016-10-03 07:35:21",
+        "time": "2016-10-03T07:35:21+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -2456,7 +2456,7 @@
         "require": {
             "php": ">=5.6.0"
         },
-        "time": "2015-07-28 20:34:47",
+        "time": "2015-07-28T20:34:47+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -2503,7 +2503,7 @@
         "require-dev": {
             "phpunit/phpunit": "~4.4"
         },
-        "time": "2016-11-19 07:33:16",
+        "time": "2016-11-19T07:33:16+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -2559,7 +2559,7 @@
         "require-dev": {
             "phpunit/phpunit": "~5"
         },
-        "time": "2017-02-18 15:18:39",
+        "time": "2017-02-18T15:18:39+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -2609,7 +2609,7 @@
         "suggest": {
             "ext-uopz": "*"
         },
-        "time": "2015-10-12 03:26:01",
+        "time": "2015-10-12T03:26:01+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -2661,7 +2661,7 @@
             "ext-mbstring": "*",
             "phpunit/phpunit": "~4.4"
         },
-        "time": "2016-11-19 08:54:04",
+        "time": "2016-11-19T08:54:04+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -2728,7 +2728,7 @@
         "require-dev": {
             "phpunit/phpunit": "^5.0"
         },
-        "time": "2016-11-26 07:53:53",
+        "time": "2016-11-26T07:53:53+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -2780,7 +2780,7 @@
         "require-dev": {
             "phpunit/phpunit": "~4.8"
         },
-        "time": "2015-12-08 07:14:41",
+        "time": "2015-12-08T07:14:41+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -2836,7 +2836,7 @@
         "require-dev": {
             "phpunit/phpunit": "~4.4"
         },
-        "time": "2017-01-29 09:50:25",
+        "time": "2017-01-29T09:50:25+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -2897,7 +2897,7 @@
         "require": {
             "php": ">=5.3.3"
         },
-        "time": "2015-06-21 13:50:34",
+        "time": "2015-06-21T13:50:34+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -2947,7 +2947,7 @@
             "phpunit/phpunit": "~4.0",
             "squizlabs/php_codesniffer": "~2.0"
         },
-        "time": "2015-06-14 21:17:01",
+        "time": "2015-06-14T21:17:01+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -3008,7 +3008,7 @@
         "suggest": {
             "ext-soap": "*"
         },
-        "time": "2016-12-08 20:27:08",
+        "time": "2016-12-08T20:27:08+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -3060,7 +3060,7 @@
         "require-dev": {
             "phpunit/phpunit": "^4.8.35 || ^5.7 || ^6.0"
         },
-        "time": "2017-02-26 11:10:40",
+        "time": "2017-02-26T11:10:40+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -3108,7 +3108,7 @@
         "require": {
             "php": ">=5.3.3"
         },
-        "time": "2016-10-03 07:40:28",
+        "time": "2016-10-03T07:40:28+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -3160,7 +3160,7 @@
         "require-dev": {
             "phpunit/phpunit": "^5.7 || ^6.0"
         },
-        "time": "2017-03-04 06:30:41",
+        "time": "2017-03-04T06:30:41+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -3219,7 +3219,7 @@
         "suggest": {
             "ext-xdebug": "^2.5.1"
         },
-        "time": "2017-04-02 07:44:40",
+        "time": "2017-04-02T07:44:40+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -3277,7 +3277,7 @@
             "phpspec/phpspec": "^2.5|^3.2",
             "phpunit/phpunit": "^4.8 || ^5.6.5"
         },
-        "time": "2017-03-02 20:05:34",
+        "time": "2017-03-02T20:05:34+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -3338,7 +3338,7 @@
             "doctrine/collections": "1.*",
             "phpunit/phpunit": "~4.1"
         },
-        "time": "2017-01-26 22:05:40",
+        "time": "2017-01-26T22:05:40+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -3409,7 +3409,7 @@
             "ext-xdebug": "*",
             "phpunit/php-invoker": "~1.1"
         },
-        "time": "2017-04-03 02:22:27",
+        "time": "2017-04-03T02:22:27+00:00",
         "bin": [
             "phpunit"
         ],
@@ -3466,7 +3466,7 @@
         "require-dev": {
             "phpunit/phpunit": "^4.8"
         },
-        "time": "2017-02-16 18:40:32",
+        "time": "2017-02-16T18:40:32+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -3536,7 +3536,7 @@
             "jenssegers/mongodb-sentry": "Add Sentry support to Laravel-MongoDB",
             "jenssegers/mongodb-session": "Add MongoDB session support to Laravel-MongoDB"
         },
-        "time": "2017-03-12 09:23:10",
+        "time": "2017-03-12T09:23:10+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -3587,7 +3587,7 @@
             "jenssegers/mongodb": "*",
             "php": ">=5.3.0"
         },
-        "time": "2015-01-30 14:14:09",
+        "time": "2015-01-30T14:14:09+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -3639,7 +3639,7 @@
             "ext-curl": "Allows access to Webdis when paired with phpiredis",
             "ext-phpiredis": "Allows faster serialization and deserialization of the Redis protocol"
         },
-        "time": "2016-06-16 16:22:20",
+        "time": "2016-06-16T16:22:20+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -3664,6 +3664,126 @@
             "nosql",
             "predis",
             "redis"
+        ]
+    },
+    {
+        "name": "cocur/slugify",
+        "version": "v2.5",
+        "version_normalized": "2.5.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/cocur/slugify.git",
+            "reference": "e8167e9a3236044afebd6e8ab13ebeb3ec9ca145"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/cocur/slugify/zipball/e8167e9a3236044afebd6e8ab13ebeb3ec9ca145",
+            "reference": "e8167e9a3236044afebd6e8ab13ebeb3ec9ca145",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.5.9"
+        },
+        "require-dev": {
+            "laravel/framework": "~5.1",
+            "latte/latte": "~2.2",
+            "league/container": "^2.2.0",
+            "mikey179/vfsstream": "~1.6",
+            "mockery/mockery": "~0.9",
+            "nette/di": "~2.2",
+            "phpunit/phpunit": "~4.8|~5.2",
+            "pimple/pimple": "~1.1",
+            "plumphp/plum": "~0.1",
+            "silex/silex": "~1.3",
+            "symfony/config": "~2.4|~3.0",
+            "symfony/dependency-injection": "~2.4|~3.0",
+            "symfony/http-kernel": "~2.4|~3.0",
+            "twig/twig": "~1.26|~2.0",
+            "zendframework/zend-modulemanager": "~2.2",
+            "zendframework/zend-servicemanager": "~2.2",
+            "zendframework/zend-view": "~2.2"
+        },
+        "time": "2017-03-23T21:52:55+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Cocur\\Slugify\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Ivo Bathke",
+                "email": "ivo.bathke@gmail.com"
+            },
+            {
+                "name": "Florian Eckerstorfer",
+                "email": "florian@eckerstorfer.co",
+                "homepage": "https://florian.ec"
+            }
+        ],
+        "description": "Converts a string into a slug.",
+        "keywords": [
+            "slug",
+            "slugify"
+        ]
+    },
+    {
+        "name": "cviebrock/eloquent-sluggable",
+        "version": "4.2.3",
+        "version_normalized": "4.2.3.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/cviebrock/eloquent-sluggable.git",
+            "reference": "cbeb6e16b783173dbb95e00f78237d349e73c07d"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/cviebrock/eloquent-sluggable/zipball/cbeb6e16b783173dbb95e00f78237d349e73c07d",
+            "reference": "cbeb6e16b783173dbb95e00f78237d349e73c07d",
+            "shasum": ""
+        },
+        "require": {
+            "cocur/slugify": "^2.3",
+            "illuminate/config": "^5.4",
+            "illuminate/database": "^5.4",
+            "illuminate/support": "^5.4",
+            "php": ">=5.6.4 || ^7.0"
+        },
+        "require-dev": {
+            "mockery/mockery": "^0.9.4",
+            "orchestra/database": "~3.4",
+            "orchestra/testbench": "^3.4",
+            "phpunit/phpunit": "~5.7"
+        },
+        "time": "2017-04-18T15:03:20+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Cviebrock\\EloquentSluggable\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Colin Viebrock",
+                "email": "colin@viebrock.ca"
+            }
+        ],
+        "description": "Easy creation of slugs for your Eloquent models in Laravel 5.",
+        "homepage": "https://github.com/cviebrock/eloquent-sluggable",
+        "keywords": [
+            "eloquent",
+            "laravel",
+            "slug"
         ]
     }
 ]

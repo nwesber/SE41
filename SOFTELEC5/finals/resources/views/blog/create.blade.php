@@ -34,6 +34,15 @@
             <input type="text" name="tags" id="tags" data-role="tagsinput"/>
           </div>
         </div>
+        <div class="form-group">
+          <div class="col-md-1">
+            <h5><strong>Summary: </strong></h5>
+          </div>
+          <div class="col-md-11">
+            <input class="form-control"  name="summary" id="summary" required="true" placeholder="a one-two line summary" />
+          </div>
+        </div>
+
 
         <textarea id="summernote" name="content"></textarea>
 
