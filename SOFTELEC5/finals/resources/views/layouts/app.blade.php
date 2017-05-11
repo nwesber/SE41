@@ -41,13 +41,6 @@
           </div>
 
           <ul class="nav navbar-nav navbar-right">
-            <li>
-              <form class="searchbox">
-                <input type="search" placeholder="Search......" name="search" class="searchbox-input" required>
-                <input type="submit" class="searchbox-submit" value="GO">
-                <span class="searchbox-icon"></span>
-              </form>
-            </li>
             @if (Auth::guest())
                <li><a href="#" class="btn btn-default btn-xs navbtn"
                data-toggle="modal" data-target="#myModal"><strong>Get Started</strong></a></li>
@@ -88,6 +81,12 @@
               <li class="divider-vertical"></li>
               <li><a href="{{ url('/topic/'. 'movies')  }}">COMICS</a></li>
             </ul>
+            <form class="searchbox" method="POST" action="/searchBlog">
+              {{ csrf_field() }}
+              <input type="search" placeholder="Search......" name="search" class="searchbox-input" style="width: 100%;">
+              <input type="submit" class="searchbox-submit" value="GO">
+              <span class="searchbox-icon"></span>
+            </form>
           </div>
 
         </div>
@@ -158,11 +157,11 @@
     <script src="{{ asset('js/fb.js') }}"></script>
     <script src="{{ asset('js/blog.js') }}"></script>
     <script src="{{ asset('js/pace.js') }}"></script>
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
     $('html').bind('keypress', function(e){
       if(e.keyCode == 13){ return false; }
     });
-    </script>
+    </script> -->
     <script type="text/javascript">
       @if(Session::has('notification'))
         var type = "{{ Session::get('notification.alert-type', 'info') }}";
@@ -185,34 +184,34 @@
     </script>
     <script type="text/javascript">
       $(function() {
-  var submitIcon = $('.searchbox-icon');
-  var inputBox = $('.searchbox-input');
-  var searchBox = $('.searchbox');
-  var isOpen = false;
-  submitIcon.click(function() {
-    if (isOpen == false) {
-      searchBox.addClass('searchbox-open');
-      inputBox.focus();
-      isOpen = true;
-    } else {
-      searchBox.removeClass('searchbox-open');
-      inputBox.focusout();
-      isOpen = false;
-    }
-  });
-  submitIcon.mouseup(function() {
-    return false;
-  });
-  searchBox.mouseup(function() {
-    return false;
-  });
-  $(document).mouseup(function() {
-    if (isOpen == true) {
-      $('.searchbox-icon').css('display', 'block');
-      submitIcon.click();
-    }
-  });
-});
+        var submitIcon = $('.searchbox-icon');
+        var inputBox = $('.searchbox-input');
+        var searchBox = $('.searchbox');
+        var isOpen = false;
+        submitIcon.click(function() {
+          if (isOpen == false) {
+            searchBox.addClass('searchbox-open');
+            inputBox.focus();
+            isOpen = true;
+          } else {
+            searchBox.removeClass('searchbox-open');
+            inputBox.focusout();
+            isOpen = false;
+          }
+        });
+        submitIcon.mouseup(function() {
+          return false;
+        });
+        searchBox.mouseup(function() {
+          return false;
+        });
+        $(document).mouseup(function() {
+          if (isOpen == true) {
+            $('.searchbox-icon').css('display', 'block');
+            submitIcon.click();
+          }
+        });
+      });
     </script>
   </body>
 </html>

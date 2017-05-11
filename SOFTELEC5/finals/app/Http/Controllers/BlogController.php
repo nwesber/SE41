@@ -34,7 +34,6 @@ class BlogController extends Controller{
 
     //$result = Blog::where('tags', 'regex', "/". $keyword ."/i" )->get();
 
-
     return view('home', [ 'movies' => $movies, 'games' => $games, 'food' => $food, 'travel' => $travel, 'comics' => $comics, 'latest' => $latest, 'users' => $users ]);
   }
 
@@ -78,6 +77,16 @@ class BlogController extends Controller{
     $notification  = array('message' => 'Article Successfully Deleted!', 'alert-type' => 'success');
     session()->flash('notification', $notification);
     return redirect('/');
+  }
+
+  public function search(Request $request){
+    $search = strtolower($request->search);
+    $resultBlog = Blog::where('title', 'regex', "/". $search ."/i" )->get();
+    $resultUser = User::where('name', 'regex', "/". $search ."/i" )->get();
+    $resultTags = Blog::where('tags', 'regex', "/". $search ."/i" )->get();
+
+    return view('blog.search', compact('resultBlog', 'resultUser', 'resultTags'));
+
   }
 
   public function filterTags($tag){

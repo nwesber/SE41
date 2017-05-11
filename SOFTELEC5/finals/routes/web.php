@@ -10,6 +10,8 @@ Route::resource('blog', 'BlogController');
 Route::get('/article/{id}', 'BlogController@show');
 Route::post('/createBlog', 'BlogController@store');
 Route::post('/updateBlog', 'BlogController@update');
+Route::post('/searchBlog', 'BlogController@search');
+
 Route::get('/deleteBlog/{id}', 'BlogController@destroy');
 Route::get('/article/edit/{id}', 'BlogController@edit');
 

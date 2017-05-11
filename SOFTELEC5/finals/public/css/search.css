@@ -37,7 +37,6 @@
   padding: 0 20px 0 50px;
   font-size: 16px;
   color: black;
-  background-color: transparent;
 }
 .searchbox .searchbox-input::-moz-placeholder {
   color: #d9d9d9;

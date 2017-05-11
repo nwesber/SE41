@@ -21,8 +21,8 @@ function shareFacebook(id, picture, title){
   method: 'share',
   display: 'popup',
   title: title,
-  picture: 'http://f0619151.ngrok.io/' + picture,
-  href: 'http://f0619151.ngrok.io/article/' + id,
+  picture: 'http://577b564d.ngrok.io/' + picture,
+  href: 'http://577b564d.ngrok.io/article/' + id,
   }, function(response){});
 }
     /*2274130652811338*/
