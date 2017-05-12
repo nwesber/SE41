@@ -8,10 +8,7 @@
         <input type="text" value="{{ $param }}" name="search" autofocus="true" class="searchView" />
       </form>
 
-
-
-
-    <div class="clearTop"></div>
+    <div style="margin-top: 20px;"></div>
     <div role="tabpanel" data-example-id="togglable-tabs">
       <ul id="myTab" class="nav nav-tabs nav-tabs-responsive" role="tablist" style="border-bottom: 0;" >
         <li role="presentation" class="active">
@@ -33,7 +30,7 @@
           </a>
         </li>
       </ul>
-      <hr>
+      <hr/>
       <div id="myTabContent" class="tab-content">
         <div role="tabpanel" class="tab-pane fade in active" id="home" aria-labelledby="home-tab">
           @foreach ($resultBlog as $i => $recent)
@@ -50,7 +47,7 @@
                             <li><a href="{{ url('/topic/'. $t)  }}"><i class="fa fa-tag"></i> {{$t}}</a></li>
                             @break;
                             @endforeach
-                            <li><i class="fa fa-clock-o"></i> {{ \Carbon\Carbon::parse($recent{'updated_at'})->diffForHumans() }}</li>
+                            <li><i class="fa fa-clock-o"></i> {{ \Carbon\Carbon::parse($recent{'updated_at'})->format('M-d-Y') }}</li>
                           </ul>
                           <a href="{{ url('/article/'. $recent->_id)  }}" class="card__title">{{ $recent->title }}</a>
                           <ul class="card__meta card__meta--last">
@@ -76,14 +73,29 @@
           @endforeach
         </div>
         <div role="tabpanel" class="tab-pane fade" id="profile" aria-labelledby="profile-tab">
-          <p>
-            people
-          </p>
+          @foreach ($resultUser as $i => $user)
+          <div class="comment">
+            <div class="comment-avatar">
+              <img src="{{ asset('images/' . 'guest.png') }}">
+            </div>
+            <div style="margin-left: 100px; padding-top: 10px; padding-right: 15px;">
+              <h4 style="margin-bottom: 0px;"><strong><a href="{{ url('/profile/'. $user->_id)  }}">{{ $user->name }}</a></strong></h4>
+            </div>
+            <div style="margin-left: 100px; padding-right: 15px;">
+              <p>{{ $user->email }}</p>
+            </div>
+          </div>
+
+          @endforeach
         </div>
         <div role="tabpanel" class="tab-pane fade" id="tags" aria-labelledby="profile-tab">
-          <p>
-            tags
-          </p>
+          <div class="col-md-12">
+            <div class="tags">
+                @foreach ($tags as $i => $tag)
+                  <a href="#"><span class="tag">{{ $tag }}</span></a>
+                @endforeach
+            </div>
+          </div>
         </div>
 
       </div>

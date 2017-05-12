@@ -88,7 +88,16 @@ class BlogController extends Controller{
     $resultBlog = Blog::where('title', 'regex', "/". $search ."/i" )->get();
     $resultUser = User::where('name', 'regex', "/". $search ."/i" )->get();
     $resultTags = Blog::where('tags', 'regex', "/". $search ."/i" )->get();
-    return view('blog.search', compact('resultBlog', 'resultUser', 'resultTags', 'param', 'users'));
+    $tags = [];
+    foreach ($resultTags as $i => $blog){
+      foreach($blog->tags as $tag => $t){
+        if (strpos($t, $search) !== false) {
+          $tags[] = $t;
+        }
+      }
+    }
+
+    return view('blog.search', compact('resultBlog', 'resultUser', 'tags', 'param', 'users'));
   }
 
   public function filterTags($tag){

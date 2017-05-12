@@ -88,12 +88,15 @@
               <li class="divider-vertical"></li>
               <li><a href="{{ url('/topic/'. 'movies')  }}">COMICS</a></li>
             </ul>
-            <form class="searchbox" method="POST" action="/searchBlog">
-              {{ csrf_field() }}
-              <input type="search" placeholder="Search Large" name="search" class="searchbox-input" style="width: 100%;">
-              <input type="submit" class="searchbox-submit" value="GO">
-              <span class="searchbox-icon"></span>
-            </form>
+            @if (Auth::guest())
+            @else
+              <form class="searchbox" method="POST" action="/searchBlog">
+                {{ csrf_field() }}
+                <input type="search" placeholder="Search Large" name="search" class="searchbox-input" style="width: 100%;">
+                <input type="submit" class="searchbox-submit" value="GO">
+                <span class="searchbox-icon"></span>
+              </form>
+             @endif
           </div>
 
         </div>
