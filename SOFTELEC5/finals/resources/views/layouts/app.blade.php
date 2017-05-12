@@ -28,6 +28,10 @@
         overflow: scroll;
         overflow-x: hidden;
       }
+
+      .label-info{
+        background-color: #2ab27b;
+      }
     </style>
 
     <script> window.Laravel = {!! json_encode([ 'csrfToken' => csrf_token(), ]) !!}; </script>
@@ -86,7 +90,7 @@
               <li class="divider-vertical"></li>
               <li><a href="{{ url('/topic/'. 'movies')  }}">MOVIES</a></li>
               <li class="divider-vertical"></li>
-              <li><a href="{{ url('/topic/'. 'movies')  }}">COMICS</a></li>
+              <li><a href="{{ url('/topic/'. 'comics')  }}">COMICS</a></li>
             </ul>
             @if (Auth::guest())
             @else

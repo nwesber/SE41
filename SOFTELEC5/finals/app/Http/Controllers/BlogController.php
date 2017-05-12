@@ -101,6 +101,32 @@ class BlogController extends Controller{
   }
 
   public function filterTags($tag){
-    dd($tag);
+    $tags = ucfirst($tag);
+    $quote = $this->quotes($tag);
+    return view('blog.tags', compact('tags', 'quote'));
+  }
+
+  public function quotes($tag){
+    switch ($tag) {
+      case 'travel':
+        $quote = '"It feels to good to be lost in the right direction"';
+        break;
+      case 'games':
+        $quote = '"Be the Game Changer"';
+        break;
+      case 'food':
+        $quote = '"Great Ingredients, Make Great Food."';
+        break;
+      case 'movies':
+        $quote = '"Do what you fear and learn to love it."';
+        break;
+      case 'comics':
+        $quote = '"With great power comes great responsibility. - Uncle Ben';
+        break;
+      default:
+        # code...
+        break;
+    }
+    return $quote;
   }
 }
