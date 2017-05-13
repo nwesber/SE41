@@ -71,58 +71,6 @@
             "time": "2017-03-23T21:52:55+00:00"
         },
         {
-            "name": "cviebrock/eloquent-sluggable",
-            "version": "4.2.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/cviebrock/eloquent-sluggable.git",
-                "reference": "cbeb6e16b783173dbb95e00f78237d349e73c07d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/cviebrock/eloquent-sluggable/zipball/cbeb6e16b783173dbb95e00f78237d349e73c07d",
-                "reference": "cbeb6e16b783173dbb95e00f78237d349e73c07d",
-                "shasum": ""
-            },
-            "require": {
-                "cocur/slugify": "^2.3",
-                "illuminate/config": "^5.4",
-                "illuminate/database": "^5.4",
-                "illuminate/support": "^5.4",
-                "php": ">=5.6.4 || ^7.0"
-            },
-            "require-dev": {
-                "mockery/mockery": "^0.9.4",
-                "orchestra/database": "~3.4",
-                "orchestra/testbench": "^3.4",
-                "phpunit/phpunit": "~5.7"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Cviebrock\\EloquentSluggable\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Colin Viebrock",
-                    "email": "colin@viebrock.ca"
-                }
-            ],
-            "description": "Easy creation of slugs for your Eloquent models in Laravel 5.",
-            "homepage": "https://github.com/cviebrock/eloquent-sluggable",
-            "keywords": [
-                "eloquent",
-                "laravel",
-                "slug"
-            ],
-            "time": "2017-04-18T15:03:20+00:00"
-        },
-        {
             "name": "dnoegel/php-xdg-base-dir",
             "version": "0.1",
             "source": {
