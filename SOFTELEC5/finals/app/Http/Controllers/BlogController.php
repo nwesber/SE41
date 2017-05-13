@@ -106,6 +106,10 @@ class BlogController extends Controller{
     return view('blog.tags', compact('tags', 'quote'));
   }
 
+  public function tagged($tag){
+    dd($tag);
+  }
+
   public function quotes($tag){
     switch ($tag) {
       case 'travel':
@@ -121,7 +125,7 @@ class BlogController extends Controller{
         $quote = '"Do what you fear and learn to love it."';
         break;
       case 'comics':
-        $quote = '"With great power comes great responsibility. - Uncle Ben';
+        $quote = '"With great power comes great responsibility. - Uncle Ben"';
         break;
       default:
         # code...

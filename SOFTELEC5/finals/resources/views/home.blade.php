@@ -3,7 +3,7 @@
 @section('content')
 <div class="container clearTop">
   <div class="site__wrapper">
-    <h3><strong><a href="{{ url('/topic/'. 'recent')  }}" class="tagColor">Latest Post</a></strong></h3>
+    <h3><strong><a href="{{ url('/tagged/'. 'recent')  }}" class="tagColor">Latest Post</a></strong></h3>
     <div class="homeMargin"></div>
     @foreach ($latest as $i => $recent)
       @foreach($users as $i => $user)
@@ -16,7 +16,7 @@
                   <div class="card__overlay-content">
                     <ul class="card__meta">
                       @foreach($recent->tags as $tag => $t)
-                      <li><a href="{{ url('/topic/'. $t)  }}"><i class="fa fa-tag"></i> {{$t}}</a></li>
+                      <li><a href="{{ url('/tagged/'. $t)  }}"><i class="fa fa-tag"></i> {{$t}}</a></li>
                       @break;
                       @endforeach
                       <li><i class="fa fa-clock-o"></i> {{ \Carbon\Carbon::parse($recent{'updated_at'})->diffForHumans() }}</li>
@@ -46,7 +46,7 @@
   </div>
 
   <div class="site__wrapper">
-    <h3><strong><a href="{{ url('/topic/'. 'comics')  }}" class="tagColor">Comics</a></strong></h3>
+    <h3><strong><a href="{{ url('/tagged/'. 'comics')  }}" class="tagColor">Comics</a></strong></h3>
     <div class="homeMargin"></div>
     @foreach ($comics as $i => $blog)
       @foreach($users as $i => $user)
@@ -59,7 +59,7 @@
                   <div class="card__overlay-content">
                     <ul class="card__meta">
                       @foreach($blog->tags as $tag => $t)
-                      <li><a href="{{ url('/topic/'. $t)  }}"><i class="fa fa-tag"></i> {{$t}}</a></li>
+                      <li><a href="{{ url('/tagged/'. $t)  }}"><i class="fa fa-tag"></i> {{$t}}</a></li>
                       @break;
                       @endforeach
                       <li><i class="fa fa-clock-o"></i> {{ \Carbon\Carbon::parse($blog{'created_at'})->format('M-d-Y') }}</li>
@@ -89,7 +89,7 @@
   </div>
 
   <div class="site__wrapper">
-    <h3><strong><a href="{{ url('/topic/'. 'travel')  }}" class="tagColor">Travel</a></strong></h3>
+    <h3><strong><a href="{{ url('/tagged/'. 'travel')  }}" class="tagColor">Travel</a></strong></h3>
     <div class="homeMargin"></div>
     @foreach ($travel as $i => $blog)
       @foreach($users as $i => $user)
@@ -102,7 +102,7 @@
                   <div class="card__overlay-content">
                     <ul class="card__meta">
                       @foreach($blog->tags as $tag => $t)
-                      <li><a href="{{ url('/topic/'. $t)  }}"><i class="fa fa-tag"></i> {{$t}}</a></li>
+                      <li><a href="{{ url('/tagged/'. $t)  }}"><i class="fa fa-tag"></i> {{$t}}</a></li>
                       @break;
                       @endforeach
                       <li><i class="fa fa-clock-o"></i> {{ \Carbon\Carbon::parse($blog{'created_at'})->format('M-d-Y') }}</li>
@@ -132,7 +132,7 @@
   </div>
 
   <div class="site__wrapper">
-    <h3><strong><a href="{{ url('/topic/'. 'food')  }}" class="tagColor">Food</a></strong></h3>
+    <h3><strong><a href="{{ url('/tagged/'. 'food')  }}" class="tagColor">Food</a></strong></h3>
     <div class="homeMargin"></div>
     @foreach ($food as $i => $blog)
       @foreach($users as $i => $user)
@@ -145,7 +145,7 @@
                   <div class="card__overlay-content">
                     <ul class="card__meta">
                       @foreach($blog->tags as $tag => $t)
-                      <li><a href="{{ url('/topic/'. $t)  }}"><i class="fa fa-tag"></i> {{$t}}</a></li>
+                      <li><a href="{{ url('/tagged/'. $t)  }}"><i class="fa fa-tag"></i> {{$t}}</a></li>
                       @break;
                       @endforeach
                       <li><i class="fa fa-clock-o"></i> {{ \Carbon\Carbon::parse($blog{'created_at'})->format('M-d-Y') }}</li>
@@ -175,7 +175,7 @@
   </div>
 
   <div class="site__wrapper">
-    <h3><strong><a href="{{ url('/topic/'. 'games')  }}" class="tagColor">Games</a></strong></h3>
+    <h3><strong><a href="{{ url('/tagged/'. 'games')  }}" class="tagColor">Games</a></strong></h3>
     <div class="homeMargin"></div>
     @foreach ($games as $i => $blog)
       @foreach($users as $i => $user)
@@ -188,7 +188,7 @@
                   <div class="card__overlay-content">
                     <ul class="card__meta">
                       @foreach($blog->tags as $tag => $t)
-                      <li><a href="{{ url('/topic/'. $t)  }}"><i class="fa fa-tag"></i> {{$t}}</a></li>
+                      <li><a href="{{ url('/tagged/'. $t)  }}"><i class="fa fa-tag"></i> {{$t}}</a></li>
                       @break;
                       @endforeach
                       <li><i class="fa fa-clock-o"></i> {{ \Carbon\Carbon::parse($blog{'created_at'})->format('M-d-Y') }}</li>
@@ -218,7 +218,7 @@
   </div>
 
   <div class="site__wrapper">
-    <h3><strong><a href="{{ url('/topic/'. 'movies')  }}" class="tagColor">Movies</a></strong></h3>
+    <h3><strong><a href="{{ url('/tagged/'. 'movies')  }}" class="tagColor">Movies</a></strong></h3>
     <div class="homeMargin"></div>
     @foreach ($movies as $i => $blog)
       @foreach($users as $i => $user)
@@ -231,7 +231,7 @@
                   <div class="card__overlay-content">
                     <ul class="card__meta">
                       @foreach($blog->tags as $tag => $t)
-                      <li><a href="{{ url('/topic/'. $t)  }}"><i class="fa fa-tag"></i> {{$t}}</a></li>
+                      <li><a href="{{ url('/tagged/'. $t)  }}"><i class="fa fa-tag"></i> {{$t}}</a></li>
                       @break;
                       @endforeach
                       <li><i class="fa fa-clock-o"></i> {{ \Carbon\Carbon::parse($blog{'created_at'})->format('M-d-Y') }}</li>

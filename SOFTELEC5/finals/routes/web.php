@@ -25,4 +25,5 @@ Route::get('/comment/{id}', 'CommentController@deleteComment');
 
 //Filter Tags
 Route::get('/topic/{tag}', 'BlogController@filterTags');
+Route::get('/tagged/{tag}', 'BlogController@tagged');
 Route::get('/filter/{ tag }', 'BlogController@myProfile');

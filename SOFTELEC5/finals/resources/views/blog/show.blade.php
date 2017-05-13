@@ -54,7 +54,7 @@
                     <h5><strong>Related Tags:</strong></h5>
                     <hr>
                     @foreach($blog->tags as $tag => $t)
-                      <a href="#"><span class="tag">{{ $t }}</span></a>
+                      <a href="{{ url('/tagged/'. $t)  }}"><span class="tag">{{ $t }}</span></a>
                     @endforeach
                   </div>
                 </div>
