@@ -32,6 +32,7 @@
             <div class="col-md-9">
               <div class="panel panel-default">
                 <div class="panel-body">
+                  <div class="col-md-12">
                   <h3><strong>{{ $blog->title }}</strong></h3>
                   <h6>
                     @if (Auth::guest())
@@ -44,6 +45,7 @@
                     </span>
                   </h6>
                   <p>{!! $blog->content !!}</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -74,7 +76,7 @@
                       </div>
                     @else
                       <div class="comment-avatar">
-                        <img src="{{ asset('images/' . 'guest.png') }}">
+                        <img src="{{ asset('images/' . Auth::user()->image) }}">
                       </div>
                       <form class="form" name="form" action="/comment" method="POST">
                         {{ csrf_field() }}
@@ -93,7 +95,7 @@
                             @if($user->id == $comment->user_id)
                             <div class="comment">
                               <div class="comment-avatar">
-                                <img src="{{ asset('images/' . 'guest.png') }}">
+                                <img src="{{ asset('images/' . $user->image) }}">
                               </div>
 
 
@@ -105,7 +107,7 @@
                                       @if(Auth::guest())
                                         <a href="#" data-toggle="modal" data-target="#myModal"> {{ $user->name }} </a>
                                       @else
-                                        <a href="{{ url('/profile/'. $user->_id)  }}">{{ $user->name }}</a>
+                                        <a href="{{ url('/user/'. $user->_id)  }}">{{ $user->name }}</a>
                                       @endif
                                     </span>
                                     <span class="comment-date">{{  \Carbon\Carbon::parse( $comment->created_at )->diffForHumans() }}</span>

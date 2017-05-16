@@ -69,7 +69,7 @@
                       @if (Auth::guest())
                         <li><a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-user"></i> {{ $user->name }}</a></li>
                       @else
-                        <li><a href="{{ url('/profile/'. $user->_id)  }}"><i class="fa fa-user"></i> {{ $user->name }}</a></li>
+                        <li><a href="{{ url('/user/'. $user->_id)  }}"><i class="fa fa-user"></i> {{ $user->name }}</a></li>
                       @endif
                       <li><a href="{{ url('/article/'. $blog->_id)  }}">Read More</a></li>
                       <li>
@@ -112,7 +112,7 @@
                       @if (Auth::guest())
                         <li><a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-user"></i> {{ $user->name }}</a></li>
                       @else
-                        <li><a href="{{ url('/profile/'. $user->_id)  }}"><i class="fa fa-user"></i> {{ $user->name }}</a></li>
+                        <li><a href="{{ url('/user/'. $user->_id)  }}"><i class="fa fa-user"></i> {{ $user->name }}</a></li>
                       @endif
                       <li><a href="{{ url('/article/'. $blog->_id)  }}">Read More</a></li>
                       <li>
@@ -155,7 +155,7 @@
                       @if (Auth::guest())
                         <li><a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-user"></i> {{ $user->name }}</a></li>
                       @else
-                        <li><a href="{{ url('/profile/'. $user->_id)  }}"><i class="fa fa-user"></i> {{ $user->name }}</a></li>
+                        <li><a href="{{ url('/user/'. $user->_id)  }}"><i class="fa fa-user"></i> {{ $user->name }}</a></li>
                       @endif
                       <li><a href="{{ url('/article/'. $blog->_id)  }}">Read More</a></li>
                       <li>
@@ -198,7 +198,7 @@
                       @if (Auth::guest())
                         <li><a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-user"></i> {{ $user->name }}</a></li>
                       @else
-                        <li><a href="{{ url('/profile/'. $user->_id)  }}"><i class="fa fa-user"></i> {{ $user->name }}</a></li>
+                        <li><a href="{{ url('/user/'. $user->_id)  }}"><i class="fa fa-user"></i> {{ $user->name }}</a></li>
                       @endif
                       <li><a href="{{ url('/article/'. $blog->_id)  }}">Read More</a></li>
                       <li>
@@ -241,7 +241,7 @@
                       @if (Auth::guest())
                         <li><a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-user"></i> {{ $user->name }}</a></li>
                       @else
-                        <li><a href="{{ url('/profile/'. $user->_id)  }}"><i class="fa fa-user"></i> {{ $user->name }}</a></li>
+                        <li><a href="{{ url('/user/'. $user->_id)  }}"><i class="fa fa-user"></i> {{ $user->name }}</a></li>
                       @endif
                       <li><a href="{{ url('/article/'. $blog->_id)  }}">Read More</a></li>
                       <li>

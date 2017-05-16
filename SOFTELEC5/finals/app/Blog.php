@@ -78,6 +78,7 @@ class Blog extends Eloquent
       ->update([
         'title' => $request->title,
         'content' => $request->content,
+        'summary' => $request->summary,
         'image' => $image,
       ]);
 
@@ -90,6 +91,7 @@ class Blog extends Eloquent
       DB::collection('blogs')->where('_id', $request->id)
       ->update([
         'title' => $request->title,
+         'summary' => $request->summary,
         'content' => $request->content,
       ]);
 

@@ -24,13 +24,66 @@
     <link href="{{ asset('css/search.css') }}" rel="stylesheet">
 
     <style type="text/css">
-      html {
-        overflow: scroll;
-        overflow-x: hidden;
+      body.modal-open-noscroll{
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+        padding-right: 0px !important;
+        padding-left: 0px !important;
+        overflow: auto !important;
+      }
+      .modal-open-noscroll .navbar-default, .modal-open .navbar-default{
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+        padding-right: 0px !important;
+        padding-left: 0px !important;
       }
 
       .label-info{
         background-color: #2ab27b;
+      }
+
+      .user-pic{
+        margin: auto;
+        border-radius: 50%;
+        height: 150px;
+        width: 150px;
+        background-size: cover;
+        background-position: center;
+        background-blend-mode: multiply;
+        vertical-align: middle;
+        text-align: center;
+        color: transparent;
+        transition: all .3s ease;
+        text-decoration: none;
+      }
+
+      .profile-pic {
+        margin: auto;
+        border-radius: 50%;
+        height: 150px;
+        width: 150px;
+        background-size: cover;
+        background-position: center;
+        background-blend-mode: multiply;
+        vertical-align: middle;
+        text-align: center;
+        color: transparent;
+        transition: all .3s ease;
+        text-decoration: none;
+      }
+
+      .profile-pic:hover {
+        background-color: rgba(0,0,0,.5);
+        z-index: 10000;
+        color: #fff;
+        transition: all .3s ease;
+        text-decoration: none;
+      }
+
+      .profile-pic span {
+        display: inline-block;
+        padding-top: 4.5em;
+        padding-bottom: 4.5em;
       }
     </style>
 
@@ -62,7 +115,7 @@
                 </a>
 
                 <ul class="dropdown-menu" role="menu">
-                  <li> <a href="{{ url('/profile/'. Auth::user()->id)  }}">Profile</a>
+                  <li> <a href="{{ url('/user/'. Auth::user()->id)  }}">Profile</a>
                   <li> <a href="{{ route('blog.create') }}">New Story</a>
                   <li>
                     <a href="{{ route('logout') }}"
@@ -115,7 +168,7 @@
             </div>
             <div class="modal-body">
               <div class="row">
-                <div class="col-xs-6">
+                <div class="col-md-6">
                   <div class="well">
                     <form id="loginForm" method="POST" action="{{ route('login') }}"  >
                       <div class="form-group">
@@ -135,7 +188,7 @@
                     </form>
                   </div>
                 </div>
-                <div class="col-xs-6">
+                <div class="col-md-6">
                   <p class="lead">Register now for <span class="text-success">FREE</span></p>
                   <ul class="list-unstyled" style="line-height: 2">
                     <li><span class="fa fa-check text-success"></span> Write your own article.</li>
@@ -151,11 +204,29 @@
         </div>
       </div>
 
-        <div class="scroll-top-wrapper ">
-          <span class="scroll-top-inner">
-            <i class="fa fa-2x fa-arrow-circle-up"></i>
-          </span>
+      <div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <form id="form" enctype="multipart/form-data" role="form" action="/uploadImage" method="POST">
+               {{ csrf_field() }}
+
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title">Upload Photo</h4>
+              </div>
+              <div class="modal-body">
+                <div id="messages"></div>
+                <input type="file" name="fileUpload" accept="image/*" id="file">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-primary">Save</button>
+              </div>
+            </form>
+          </div>
         </div>
+      </div>
+
         @yield('content')
 
 

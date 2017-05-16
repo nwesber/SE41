@@ -10,26 +10,10 @@
         <div class="panel-body">
 
         @foreach ($user as $i => $profile)
-          @if(empty($profile->image) )
-          <a data-target="#imageModal" data-toggle="modal" href="#imageModal" class="profile-pic">
-            <div class="profile-pic" style="background-image: url('/images/guest.png')" >
-              <i class="fa fa-camera" aria-hidden="true"></i>
-              <span>Change Image</span>
-            </div>
-          </a>
-          @else
-          <a data-target="#imageModal" data-toggle="modal" href="#imageModal" class="profile-pic">
-            <div class="profile-pic" style="background-image: url('/images/{{ $profile->image }}')" >
-              <i class="fa fa-camera" aria-hidden="true"></i>
-              <span>Change Image</span>
-            </div>
-          </a>
-          @endif
+          <div class="user-pic" style="background-image: url('/images/{{ $profile->image }}')" ></div>
+          <h3 class="text-center"><strong>{{ $profile->name }}</strong></h3>
+          <h5 class="text-center"><i class="fa fa-envelope"></i>&nbsp;&nbsp;<strong>{{ $profile->email }}</strong></h5>
         @endforeach
-
-
-          <h3 class="text-center"><strong>{{ Auth::user()->name }}</strong></h3>
-          <h5 class="text-center"><i class="fa fa-envelope"></i>&nbsp;&nbsp;<strong>{{ Auth::user()->email }}</strong></h5>
         </div>
       </div>
     </div>
@@ -68,9 +52,6 @@
               </div>
             </article>
           <hr>
-
-
-
           @endforeach
         </div>
       </div>

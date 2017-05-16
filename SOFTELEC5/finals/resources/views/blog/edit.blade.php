@@ -4,10 +4,10 @@
 <div class="container">
    @foreach ($blogs as $i => $blog)
   <form action="/updateBlog" method="POST" class="form-horizontal uploader" enctype="multipart/form-data">
-  <div class="panel panel-default centerForm clearCreate" style="max-width: 1000px;">
+  <div class="panel panel-default centerForm clearTop" style="max-width: 1000px;">
     <div class="panel-body">
       <h4 style="display: inline-block;"><strong>Edit Article</strong></h4>
-      <button class="pull-right btn btn-success " type="submit"><i class="fa fa-floppy-o" aria-hidden="true"></i>&nbsp; &nbsp;Update Event</button>
+      <button class="pull-right btn btn-success " type="submit"><i class="fa fa-floppy-o" aria-hidden="true"></i>&nbsp; &nbsp;Update Article</button>
     </div>
   </div>
 
@@ -24,6 +24,14 @@
           </div>
           <div class="col-md-11">
             <input class="form-control"  placeholder="Title" name="title" id="title" value="{{ $blog->title }}" />
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-md-1">
+            <h5><strong>Summary: </strong></h5>
+          </div>
+          <div class="col-md-11">
+            <input class="form-control"  placeholder="Summary" name="summary" id="summary" value="{{ $blog->summary }}" />
           </div>
         </div>
         <div class="form-group">

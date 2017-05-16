@@ -54,7 +54,7 @@
                             @if (Auth::guest())
                               <li><a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-user"></i> {{ $user->name }}</a></li>
                             @else
-                              <li><a href="{{ url('/profile/'. $user->_id)  }}"><i class="fa fa-user"></i> {{ $user->name }}</a></li>
+                              <li><a href="{{ url('/user/'. $user->_id)  }}"><i class="fa fa-user"></i> {{ $user->name }}</a></li>
                             @endif
                             <li><a href="{{ url('/article/'. $recent->_id)  }}">Read More</a></li>
                             <li>
@@ -79,7 +79,7 @@
               <img src="{{ asset('images/' . 'guest.png') }}">
             </div>
             <div style="margin-left: 100px; padding-top: 10px; padding-right: 15px;">
-              <h4 style="margin-bottom: 0px;"><strong><a href="{{ url('/profile/'. $user->_id)  }}">{{ $user->name }}</a></strong></h4>
+              <h4 style="margin-bottom: 0px;"><strong><a href="{{ url('/user/'. $user->_id)  }}">{{ $user->name }}</a></strong></h4>
             </div>
             <div style="margin-left: 100px; padding-right: 15px;">
               <p>{{ $user->email }}</p>

@@ -366,11 +366,7 @@ input[type="file"]::-webkit-file-upload-button {
 }
 
 .clearTop{
-  margin-top: 50px;
-}
-
-.clearCreate{
-  margin-top: 35px;
+  margin-top: 85px !important;
 }
 
 @media screen and (max-width: 736px) {
@@ -379,21 +375,8 @@ input[type="file"]::-webkit-file-upload-button {
   }
 
   .clearTop{
-    margin-top: 100px;
+    margin-top: 120px !important;
   }
-}
-
-body.modal-open-noscroll {
-  margin-right: 0!important;
-  overflow: hidden;
-}
-.modal-open-noscroll .navbar-fixed-top, .modal-open .navbar-fixed-bottom {
-  margin-right: 0!important;
-}
-
-.modal-open .navbar-fixed-top,
-.modal-open .navbar-fixed-bottom {
-  padding-right: 17px !important;
 }
 
 

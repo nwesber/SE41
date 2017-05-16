@@ -4,7 +4,7 @@
 <div class="container">
   <form action="/createBlog" method="POST" class="form-horizontal uploader" enctype="multipart/form-data">
 
-  <div class="panel panel-default centerForm clearCreate panelSettings">
+  <div class="panel panel-default centerForm clearTop panelSettings">
     <div class="panel-body">
       <h4 style="display: inline-block;"><strong>New Article</strong></h4>
       <button class="pull-right btn btn-success " type="submit"><i class="fa fa-floppy-o" aria-hidden="true"></i>&nbsp; &nbsp;Save Event</button>

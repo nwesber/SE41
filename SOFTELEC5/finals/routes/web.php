@@ -17,7 +17,9 @@ Route::get('/deleteBlog/{id}', 'BlogController@destroy');
 Route::get('/article/edit/{id}', 'BlogController@edit');
 
 //Profile
-Route::get('/profile/{id}', 'UserController@myProfile');
+Route::get('/user/{id}', 'UserController@myProfile');
+Route::get('/profile/{id}', 'UserController@userProfile');
+Route::post('/uploadImage', 'UserController@uploadImage');
 
 //Comment
 Route::post('/comment', 'CommentController@storeComment');
