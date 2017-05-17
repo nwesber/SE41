@@ -103,11 +103,21 @@ class BlogController extends Controller{
   public function filterTags($tag){
     $tags = ucfirst($tag);
     $quote = $this->quotes($tag);
-    return view('blog.tags', compact('tags', 'quote'));
+    $users = User::all();
+    $resultTags = Blog::where('tags', 'regex', "/". $tags ."/i" )->get();
+    return view('blog.tags', compact('tags', 'quote', 'resultTags', 'users'));
   }
 
   public function tagged($tag){
-    dd($tag);
+    $tags = ucfirst($tag);
+    $users = User::all();
+
+    if($tag == 'recent'){
+      $resultTags = Blog::latest()->get();
+    }else{
+      $resultTags = Blog::where('tags', 'regex', "/". $tags ."/i" )->latest()->get();
+    }
+    return view('blog.tagged', compact('tags', 'resultTags', 'users'));
   }
 
   public function quotes($tag){

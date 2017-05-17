@@ -44,7 +44,7 @@
                       {{ \Carbon\Carbon::parse($blog{'created_at'})->format('dS F, Y') }}
                     </span>
                   </h6>
-                  <p>{!! $blog->content !!}</p>
+                  <div class="col-md-12"><p>{!! $blog->content !!}</p></div>
                   </div>
                 </div>
               </div>

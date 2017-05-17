@@ -1,15 +1,13 @@
 @extends('layouts.app')
 
 @section('content')
-
 <div class="container clearTop">
   <div class="site__wrapper">
-    <p style="margin-bottom: 0px; color: rgba(0,0,0,.44); font-size: 16px;">Handpicked by Large Staff</p>
+    <p style="margin-bottom: 0px; color: rgba(0,0,0,.44); font-size: 16px;">Tagged In</p>
     <h2 style="margin-top: 0px; color: black;"><strong>{{ $tags }}</strong></h2>
-    <p style="margin-bottom: 0px; color: black; font-size: 16px;"><i>{{ $quote }}</i></p>
     <hr>
-    <h4 style="color: black; font-size: 24px; font-weight: 300px; line-height: 1.4;">Latest Post</h4>
-    @foreach ($resultTags as $i => $recent)
+    <h4 style="color: black; font-size: 24px; font-weight: 300px; line-height: 1.4;">Latest Stories</h4>
+     @foreach ($resultTags as $i => $recent)
       @foreach($users as $i => $user)
         @if($recent->user_id == $user->_id)
         <div class="grid">
