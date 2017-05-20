@@ -79,7 +79,7 @@
               <img src="{{ asset('images/' . 'guest.png') }}">
             </div>
             <div style="margin-left: 100px; padding-top: 10px; padding-right: 15px;">
-              <h4 style="margin-bottom: 0px;"><strong><a href="{{ url('/user/'. $user->_id)  }}">{{ $user->name }}</a></strong></h4>
+              <h4 style="margin-bottom: 0px;"><strong><a href="{{ url('/profile/'. $user->_id)  }}">{{ $user->name }}</a></strong></h4>
             </div>
             <div style="margin-left: 100px; padding-right: 15px;">
               <p>{{ $user->email }}</p>

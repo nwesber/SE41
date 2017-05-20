@@ -37,10 +37,12 @@
       <div class="clearTopSmall"></div>
       <div class="panel panel-default">
         <div class="panel-body">
-          <h3><strong>Latest Posts: </strong></h3>
+          <h3><strong>Your Stories: </strong></h3>
           <hr>
 
-          @foreach ($blogs as $i => $blog)
+          @forelse ($blogs as $i => $blog)
+
+
             <article>
               <div class="row">
                 <div class="col-sm-6 col-md-4">
@@ -68,10 +70,12 @@
               </div>
             </article>
           <hr>
+           @empty
+              <p align="center">You haven't published any stories yet</p>
 
 
 
-          @endforeach
+          @endforelse
         </div>
       </div>
     </div>

@@ -24,7 +24,7 @@
           <h3><strong>Latest Posts: </strong></h3>
           <hr>
 
-          @foreach ($blogs as $i => $blog)
+         @forelse ($blogs as $i => $blog)
             <article>
               <div class="row">
                 <div class="col-sm-6 col-md-4">
@@ -52,7 +52,14 @@
               </div>
             </article>
           <hr>
-          @endforeach
+
+           @empty
+              @foreach ($user as $i => $profile)
+                <p align="center">{{ $profile->name }} hasn’t been active on Large yet. Check back later to see their stories.</p>
+              @endforeach
+
+
+          @endforelse
         </div>
       </div>
     </div>
