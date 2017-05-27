@@ -1,0 +1,123 @@
+1.  Define “Test Case”?
+  Test case is an outline or a set of instructions for testing a specific scenario which contains the instructions, inputs, expected results and other testing variables of a specific case scenario.
+
+2.  What is Risk Based Testing?
+  Risk Based Testing is a testing approach which prioritizes the testing of specific features depending on the risk of failure of such to decrease the residual risk of the whole product.
+
+3.  Define "Test Metrics".
+  Test metrics are the measureable attributes that helps to estimate the condition, progress, quality and resources of a project
+
+4.  Define "Test Estimation".
+  Test estimation is the method or process of estimating the resources, time, and cost a project needs to be completed.
+
+5.  Define "Software Testing"
+  Software testing is a very important process in software development cycle that ensures the functional and structural quality of the product.
+
+
+Essay (30 points)
+1.  Differentiate between White Box and Black Box Testing (15 points)
+
+  White box testing is a software testing method that focuses on testing the internal structure, logic and other internal components in a program. Black box testing on the other hand focuses on the functionality of the program. Test data on white box testing are derived from the logic behind the program, while black box’s test data are derived from the program’s functional specifications. In terms of the tester’s knowledge, white box testing requires a tester who has a strong technical knowledge and capability to understand each line of the programmer’s code while the tester in black box testing does not need any technical background for he is only concerned with the input, and output of the program, focusing only on the functionality.
+  White box testing is mainly applicable to lower levels of testing because of the detailed testing by the testers. Black box testing on the other hand is applicable to higher levels of testing because the functionality is the only concern in this kind of testing.
+
+3.  Why do we need testing metrics?
+
+  The success of a testing phase of a project is not just measured by formulating the test plan, and the test execution itself. The whole testing process should be constantly monitored, ensuring that the process meets the planned schedule, quality, cost, and the resources available, thus the success of the process will be determined. By monitoring the factors stated above, the project’s progress will be controlled by early detecting the incoming threats and act accordingly to prevent delays and larger problems in the future. This will also enable the manager to report the exact status and progress of the project, and gives the figure whether you are on the right track based on the plan and allows adjustment on the execution process to meet the planned metrics.
+
+5.  What is the difference between Validation and Verification? (15 points)
+
+  Validation checks if the development team is creating the right product based from the client’s specifications and meet the user’s needs. Verification on the other hand checks if the team is building the product right, or if the software’s functionality meets the requirements of the product and functions as expected. (A simple analogy: if a team is asked to create a shooting game, validation checks if what they are doing is indeed a shooting game, not a car racing game or what not. Verification on the other hand checks if the shooting game is a game which has characters shoot one another, depending on the client’s specifications.)
+
+
+Multiple Choice
+1.  Expected Results are:
+  Most useful when specified in advance
+
+2.  Beta testing is:
+  Performed by customers at their own site
+
+3.  The main focus of acceptance is
+  Testing for business perspective
+
+4.  Given the following:
+  b.  1 test for statement coverage, 2 for branch coverage
+
+
+5.  Consider the following:
+  d.  SC = 2 and DC = 2
+
+
+6.  Deciding how much testing is enough should take into account
+  c.  i,ii are true and iii,iv are false
+
+
+7.  One of the fields on a form contains a textbox that accepts alphabets in lower or upper case. Identify the invalid Equivalence class value.
+  d.  CLa01ss
+
+8.  In a system designed to work out the tax to be paid:
+  a.  £4800; £14000; £28000
+
+
+9.  Validation involves which of the following
+  b.  ii is true and i,iii,iv are false
+
+
+10. Repeated Testing of an already tested program, after modification, to discover any defects introduced or uncovered as a result of the changes in the software being tested or in another related or unrelated software component:
+  c.  Regression Testing
+
+
+11. What is the expected result for each of the following test cases?
+  d.  A – Offer upgrade to Gold, B – Don’t offer any upgrade.
+
+12. Functional system testing is:
+  c.  testing the end to end functionality of the system as a whole
+
+
+
+13. Consider the following statements:
+  d.  ii, iii & iv are True; i& v are False
+
+14. Regression testing should be performed:
+  c.  ii& iv are true, i, iii & v are false
+
+15. Test Conditions are derived from:
+  a.  Specifications
+
+
+16. Benefits of Independent Testing
+  b.  Independent testers see other and different defects and are unbiased.
+
+
+17. Which of the following helps in monitoring the Test Progress:
+  b.  i,ii,iii are correct and iv is incorrect
+
+
+18. The selection of a test approach should consider the context:
+  b.  i,ii,iii are true and iv is false
+
+
+19. When what is visible to end-users is a deviation from the specific or expected behavior, this is called:
+  c.  a failure
+
+
+20. Testing should be stopped when:
+  e.  it depends on the risks for the system being tested
+
+21. Which of the following is NOT part of system testing:
+  e.  top-down integration testing
+
+22. The cost of fixing a fault:
+  b.  Increases as we move the product towards live use
+
+
+23. What statement about expected outcomes is FALSE:
+  a.  expected outcomes are defined by the software’s behaviour
+
+
+24. What information need not be included in a test incident report:
+  e.  the actual and expected outcomes
+
+25. The difference between re-testing and regression testing is
+  a.  re-testing is running a test again; regression testing looks for unexpected side effects
+
+
